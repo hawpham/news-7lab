@@ -1,5 +1,5 @@
 import styles from "./PostDetail.module.scss";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 const fakePosts = {
   1: {
@@ -23,7 +23,15 @@ export default function PostDetail() {
   const { id } = useParams();
   const post = fakePosts[id];
 
-  if (!post) return <div className={styles.notFound}>Bài viết không tồn tại.</div>;
+  if (!post)
+    return (
+      <div className={styles.postNotExist}>
+        <div className={styles.notFound}>The post does not exist.</div>
+        <Link to="/" className={styles.homeBtn}>
+          Back to home
+        </Link>
+      </div>
+    );
 
   return (
     <main className={styles.postDetail}>

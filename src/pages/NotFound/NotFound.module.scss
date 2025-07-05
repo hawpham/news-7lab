@@ -1,0 +1,30 @@
+.notfound {
+  text-align: center;
+  padding: 100px 20px;
+
+  h1 {
+    font-size: 72px;
+    color: #49b64d;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 24px;
+  }
+
+  .homeBtn {
+    padding: 10px 20px;
+    background-color: #49b64d;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 6px;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: #3a9740;
+    }
+  }
+}

@@ -1,5 +1,5 @@
-import styles from './Hero.module.scss';
-import { Link } from 'react-router-dom';
+import styles from "./Hero.module.scss";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
@@ -20,10 +20,10 @@ export default function Hero() {
       <div className={styles.subArticles}>
         {[
           { id: 2, title: "Guide to Writing Beautiful Fonts on Facebook", img: "https://placeholder.pics/svg/300/DEDEDE/555555/image" },
-          { id: 3, title: "Full List of ALT Special Characters for Game, Facebook, and Word 2019", img: "https://placeholder.pics/svg/300/DEDEDE/555555/image" },
-          { id: 4, title: "Guide to Installing and Configuring IFTTT Without Plugins", img: "https://placeholder.pics/svg/300/DEDEDE/555555/image" },
-          { id: 5, title: "Top 50+ Nature Desktop Wallpapers (2025) – Stunning, Free, Large-Sized", img: "https://placeholder.pics/svg/300/DEDEDE/555555/image" }
-        ].map(post => (
+          { id: 1, title: "Full List of ALT Special Characters for Game, Facebook, and Word 2019", img: "https://placeholder.pics/svg/300/DEDEDE/555555/image" },
+          { id: 2, title: "Guide to Installing and Configuring IFTTT Without Plugins", img: "https://placeholder.pics/svg/300/DEDEDE/555555/image" },
+          { id: 1, title: "Top 50+ Nature Desktop Wallpapers (2025) – Stunning, Free, Large-Sized", img: "https://placeholder.pics/svg/300/DEDEDE/555555/image" },
+        ].map((post) => (
           <Link to={`/post/${post.id}`} key={post.id} className={styles.item}>
             <img src={post.img} alt={post.title} />
             <h4>{post.title}</h4>
