@@ -9,8 +9,8 @@ export default function CategorySection({ title, viewAllLink }) {
         <h2>{title}</h2>
         <Link to={viewAllLink}>View All</Link>
       </div>
-      <div className={styles.grid}>
-        {/* Giả lập bài viết */}
+      <div className={styles.grid}> 
+        {/* Posts */}
         <PostCard />
         <PostCard />
         <PostCard />

@@ -1,13 +1,15 @@
 import styles from './Home.module.scss';
-import FeaturePost from '../../components/FeaturedPost/FeaturedPost';
+// import FeaturePost from '../../components/FeaturedPost/FeaturedPost';
 import CategorySection from '../../components/CategorySection/CategorySection';
 import Sidebar from '../../components/Sidebar/Sidebar';
+import Hero from '../../components/Hero/Hero';
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <div className={styles.left}>
-        <FeaturePost />
+        <Hero />
+        {/* <FeaturePost /> */}
 
         <CategorySection title="Computer Tricks" viewAllLink="/computer-tricks" />
         <CategorySection title="News" viewAllLink="/news" />

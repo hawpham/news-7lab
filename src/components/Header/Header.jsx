@@ -1,10 +1,10 @@
-import { useState } from 'react';
-import { NavLink, Link } from 'react-router-dom';
-import styles from './Header.module.scss';
+import { useState } from "react";
+import { NavLink, Link } from "react-router-dom";
+import styles from "./Header.module.scss";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const today = new Date().toLocaleDateString('vi-VN');
+  const today = new Date().toLocaleDateString("vi-VN");
 
   return (
     <header className={styles.header}>
@@ -12,7 +12,7 @@ export default function Header() {
       <div className={styles.topBar}>
         <div className={styles.date}>{today}</div>
         <div className={styles.links}>
-            <Link to="/hot-news">Hot News</Link>
+          <Link to="/hot-news">Hot News</Link>
           <Link to="/contact">Contact</Link>
           <Link to="/privacy">Privacy</Link>
         </div>
@@ -21,16 +21,16 @@ export default function Header() {
       {/* Main Header */}
       <div className={styles.logoNav}>
         <div className={styles.logo}>
-          <Link to="/">7S<span>News</span></Link>
+          <Link to="/">
+            7S<span>News</span>
+          </Link>
         </div>
-
-        {/* Hamburger toggle */}
-        <button className={styles.hamburger} onClick={() => setMenuOpen(!menuOpen)}>
-          {menuOpen ? '✕' : '☰'}
+        {/* Toggle btn */}
+         <button className={styles.hamburger} onClick={() => setMenuOpen(!menuOpen)}>
+          {menuOpen ? "✕" : "☰"}
         </button>
 
-        {/* Navigation menu */}
-        <nav className={`${styles.nav} ${menuOpen ? styles.open : ''}`}>
+         <nav className={`${styles.nav} ${menuOpen ? styles.open : ""}`}>
           <NavLink to="/">News</NavLink>
           <NavLink to="/graphics">Graphics</NavLink>
           <NavLink to="/office">Office</NavLink>
