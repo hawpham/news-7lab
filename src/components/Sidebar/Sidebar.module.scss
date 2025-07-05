@@ -1,16 +1,15 @@
 .sidebar {
   padding: 16px;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
+  background-color: #fff;
+  // border: 1px solid #ddd;
   border-radius: 8px;
-  
 }
 
 .heading {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 16px;
-  border-bottom: 2px solid #49b64d;
+  border-bottom: 2px solid #006ba0;
   padding-bottom: 4px;
   display: inline-block;
 }
@@ -55,7 +54,7 @@
     }
 
     &:hover h4 {
-      color: #49b64d;
+      color: #006ba0;
     }
   }
 }

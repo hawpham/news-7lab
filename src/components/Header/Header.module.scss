@@ -34,7 +34,7 @@
   font-size: 28px;
   font-weight: bold;
   text-decoration: none;
-  color: #49b64d;
+  color: #006ba0;
 
   span {
     color: #000;
@@ -47,14 +47,13 @@
   gap: 16px;
   z-index: 999;
 
-
   a {
     text-decoration: none;
     color: #333;
     font-weight: 500;
 
     &.active {
-      color: #49b64d;
+      color: #006ba0;
     }
   }
 
@@ -68,7 +67,6 @@
     padding: 16px;
     border-top: 1px solid #ccc;
     display: none;
-    
   }
 }
 
@@ -86,5 +84,63 @@
 
   @media (max-width: 768px) {
     display: block;
+  }
+}
+
+.searchSection {
+  position: relative; // Để làm gốc cho absolute
+
+  button {
+    background: none;
+    border: none;
+    padding: 6px;
+    cursor: pointer;
+
+    svg {
+      width: 22px;
+      height: 22px;
+      color: #444;
+
+      &:hover {
+        color: #49b64d;
+      }
+    }
+  }
+}
+
+.searchOverlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 4px;
+  z-index: 200;
+
+  input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    width: 180px;
+
+    @media (max-width: 768px) {
+      width: 140px;
+    }
+  }
+
+  button {
+    background: none;
+    border: none;
+    padding: 0;
+
+    svg {
+      width: 18px;
+      height: 18px;
+      color: #555;
+    }
   }
 }

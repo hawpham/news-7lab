@@ -1,14 +1,34 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import styles from "./Header.module.scss";
+import { FaSistrix, FaSearch } from "react-icons/fa";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const today = new Date().toLocaleDateString("vi-VN");
 
+  const [showSearch, setShowSearch] = useState(false);
+  const inputRef = useRef(null);
+  const wrapperRef = useRef(null);
+
+  //   forcus search input
+  useEffect(() => {
+    if (showSearch) inputRef.current?.focus();
+  }, [showSearch]);
+
+  useEffect(() => {
+    function handleClickOutside(e) {
+      if (wrapperRef.current && !wrapperRef.current.contains(e.target)) {
+        setShowSearch(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
   return (
     <header className={styles.header}>
-      {/* Top bar */}
+      {/* Top nav */}
       <div className={styles.topBar}>
         <div className={styles.date}>{today}</div>
         <div className={styles.links}>
@@ -18,7 +38,7 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Main Header */}
+      {/* Main Nav */}
       <div className={styles.logoNav}>
         <div className={styles.logo}>
           <Link to="/">
@@ -26,20 +46,56 @@ export default function Header() {
           </Link>
         </div>
         {/* Toggle btn */}
-         <button className={styles.hamburger} onClick={() => setMenuOpen(!menuOpen)}>
+        <button className={styles.hamburger} onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? "✕" : "☰"}
         </button>
 
-         <nav className={`${styles.nav} ${menuOpen ? styles.open : ""}`}>
+        <nav className={`${styles.nav} ${menuOpen ? styles.open : ""}`}>
           <NavLink to="/">News</NavLink>
-          <NavLink to="/graphics">Graphics</NavLink>
-          <NavLink to="/office">Office</NavLink>
-          <NavLink to="/windows">Windows</NavLink>
-          <NavLink to="/software">Software</NavLink>
-          <NavLink to="/mobile">Mobile</NavLink>
-          <NavLink to="/games">Games</NavLink>
-          <NavLink to="/computer-tricks">Computer Tricks</NavLink>
+          <NavLink to="/post/1">Graphics</NavLink>
+          <NavLink to="/post/2">Office</NavLink>
+          <NavLink to="/post/1">Windows</NavLink>
+          <NavLink to="/post/2">Software</NavLink>
+          <NavLink to="/post/1">Mobile</NavLink>
+          <NavLink to="/post/2">Games</NavLink>
+          <NavLink to="/post/1">Computer Tricks</NavLink>
         </nav>
+
+        <div className={styles.searchSection} ref={wrapperRef}>
+          <button onClick={() => setShowSearch(true)}>
+            <FaSearch />
+          </button>
+
+          {showSearch && (
+            <div className={styles.searchOverlay}>
+              <input
+                ref={inputRef}
+                type="text"
+                placeholder="Search..."
+                onKeyDown={(e) => {
+                  if (e.key === "Escape") setShowSearch(false);
+                }}
+              />
+              <button onClick={() => setShowSearch(false)}>
+                <FaSistrix />
+              </button>
+            </div>
+          )}
+        </div>
+        {/* <div className={styles.searchSection} ref={wrapperRef}>
+          {showSearch ? (
+            <div className={styles.searchBox}>
+              <input ref={inputRef} type="text" placeholder="Search..." />
+              <button onClick={() => setShowSearch(false)}>
+                <FaSistrix />
+              </button>
+            </div>
+          ) : (
+            <button onClick={() => setShowSearch(true)}>
+              <FaSearch />
+            </button>
+          )}
+        </div>  */}
       </div>
     </header>
   );

@@ -1,8 +1,15 @@
 .card {
-  background: #fdfdfd;
-  border: 1px solid #ddd;
+  // background: #fdfdfd;
+  // // border: 1px solid #ddd;
   border-radius: 6px;
   overflow: hidden;
+  background-color: #ffffff;
+  // border: 1px solid #eee;
+  transition: 0.3s ease;
+
+  // &:hover {
+  //   background-color: #f0f0f0;
+  // }
 }
 
 .image {
@@ -20,7 +27,7 @@
   color: #222;
 
   &:hover {
-    color: #49b64d;
+    color: #006ba0;
   }
 }
 

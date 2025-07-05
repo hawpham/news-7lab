@@ -1,7 +1,7 @@
 .category {
   background: #fff;
   padding: 16px;
-  border: 1px solid #ddd;
+  // border: 1px solid #ddd;
 }
 
 .header {
@@ -15,8 +15,8 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 16px;
-  
-    @media (max-width: 576px) {
+
+  @media (max-width: 576px) {
     grid-template-columns: 1fr; // 1 cột
   }
 }

@@ -4,6 +4,7 @@ body {
   color: #222;
   line-height: 1.6;
   font-size: 16px;
+  background-color: #fff !important;
 }
 /* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
