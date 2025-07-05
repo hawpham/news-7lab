@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  background: #f8f8f8;
+}
+
+.left {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.sidebar {
+  flex: 1;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}

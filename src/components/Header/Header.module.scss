@@ -1,0 +1,87 @@
+.header {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  font-family: sans-serif;
+}
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 20px;
+  font-size: 14px;
+  background-color: #f4f4f4;
+}
+
+.date {
+  color: #555;
+}
+
+.links a {
+  margin-left: 12px;
+  text-decoration: none;
+  color: #0077cc;
+}
+
+.logoNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+  position: relative;
+}
+
+.logo a {
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #49b64d;
+
+  span {
+    color: #000;
+  }
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  gap: 16px;
+
+  a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+
+    &.active {
+      color: #49b64d;
+    }
+  }
+
+  @media (max-width: 768px) {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: #fff;
+    padding: 16px;
+    border-top: 1px solid #ccc;
+    display: none;
+  }
+}
+
+.open {
+  display: flex !important;
+}
+
+/* Hamburger button */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
