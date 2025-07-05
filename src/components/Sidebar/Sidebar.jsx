@@ -3,6 +3,7 @@ import styles from "./Sidebar.module.scss";
 import { Link } from "react-router-dom";
 import newsApi from "../../api/NewsApi";
 import dayjs from "dayjs";
+import ArticleSkeleton from "../Skeleton/SkeletonArticle/SkeletonArticle";
 
 const latestPosts = [
   {
@@ -59,17 +60,25 @@ export default function Sidebar() {
     <aside className={styles.sidebar}>
       <h3 className={styles.heading}>Latest Posts</h3>
       <ul className={styles.list}>
-        {listArticles?.map((post, index) => (
-          <li key={index} className={styles.postItem}>
-            <Link to={`/post/${post.id}`}>
-              <img src={post?.urlToImage} alt={post?.title} />
-              <div className={styles.info}>
-                <h4>{post?.title}</h4>
-                <span>{dayjs(post?.publishedAt).format("DD/MM/YYYY")}</span>
-              </div>
-            </Link>
-          </li>
-        ))}
+        {!loading && listArticles?.length ? (
+          listArticles?.map((post, index) => (
+            <li key={index} className={styles.postItem}>
+              <Link to={`/post/${post.id}`}>
+                <img src={post?.urlToImage} alt={post?.title} />
+                <div className={styles.info}>
+                  <h4>{post?.title}</h4>
+                  <span>{dayjs(post?.publishedAt).format("DD/MM/YYYY")}</span>
+                </div>
+              </Link>
+            </li>
+          ))
+        ) : (
+          <>
+            <ArticleSkeleton />
+            <ArticleSkeleton />
+            <ArticleSkeleton />
+          </>
+        )}
       </ul>
     </aside>
   );

@@ -39,7 +39,7 @@ export default function Home() {
         <Hero />
         {/* <FeaturePost /> */}
 
-        <CategorySection title="Computer Tricks" viewAllLink="/computer-tricks" categoryArticles="computer" />
+        <CategorySection title="Computer Tricks" viewAllLink="/computer-tricks" categoryArticles="bitcoin" />
         <CategorySection title="News" viewAllLink="/news" categoryArticles="apple" />
         <CategorySection title="Mobile" viewAllLink="/mobile" categoryArticles="mobile" />
         <CategorySection title="Windows" viewAllLink="/windows" categoryArticles="windows" />

@@ -36,7 +36,7 @@ export default function Hero() {
 
   return (
     <section className={styles.hero}>
-      {!loading > 0 ? (
+      {!loading && firstArticle?.length > 0 ? (
         <>
           {/* Main article - Left */}
 
