@@ -1,17 +1,14 @@
-import styles from './NavBar.module.scss'
-import {Link} from 'react-router-dom'
-
+import styles from "./NavBar.module.scss";
+import { Link } from "react-router-dom";
 
 export default function NavBar() {
-  const links = [
-    'News', 'Icon Facebook', 'Graphics', 'Office', 'Windows', 'Software', 'Mobile', 'Games', 'Computer Tricks'
-  ];
+  const links = ["Home", "News", "About", "Contact"];
 
   return (
     <nav className={styles.navbar}>
-      {links.map(link => (
+      {links.map((link) => (
         // <a key={link} href="/">{link}</a>
-        <Link to="/">{link}</Link> 
+        <Link to="/">{link}</Link>
       ))}
     </nav>
   );

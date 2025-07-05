@@ -16,7 +16,6 @@ As a working parent, I once told myself a 5-minute Instagram scroll was harmless
 Turning on Screen Time felt invasive at first, but it opened my eyes: how much time I was losing, how distracted I’d become.`,
     time: "02/07/2025",
   },
-  // ...thêm các post khác nếu muốn
 };
 
 export default function PostDetail() {

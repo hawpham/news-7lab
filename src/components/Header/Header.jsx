@@ -52,13 +52,13 @@ export default function Header() {
 
         <nav className={`${styles.nav} ${menuOpen ? styles.open : ""}`}>
           <NavLink to="/">News</NavLink>
-          <NavLink to="/post/1">Graphics</NavLink>
-          <NavLink to="/post/2">Office</NavLink>
-          <NavLink to="/post/1">Windows</NavLink>
-          <NavLink to="/post/2">Software</NavLink>
-          <NavLink to="/post/1">Mobile</NavLink>
-          <NavLink to="/post/2">Games</NavLink>
-          <NavLink to="/post/1">Computer Tricks</NavLink>
+          <NavLink to="/post/2">Graphics</NavLink>
+          <NavLink to="/post/1">Office</NavLink>
+          <NavLink to="/post/2">Windows</NavLink>
+          <NavLink to="/post/1">Software</NavLink>
+          <NavLink to="/post/2">Mobile</NavLink>
+          <NavLink to="/post/1">Games</NavLink>
+          <NavLink to="/post/2">Computer Tricks</NavLink>
         </nav>
 
         <div className={styles.searchSection} ref={wrapperRef}>
