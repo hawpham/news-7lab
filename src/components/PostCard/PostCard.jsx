@@ -1,6 +1,7 @@
 import ArticleSkeleton from "../Skeleton/SkeletonArticle/SkeletonArticle";
 import styles from "./PostCard.module.scss";
 import { Link } from "react-router-dom";
+import dayjs from "dayjs";
 
 export default function PostCard({ article }) {
   return !article?.length > 0 ? (
@@ -10,7 +11,7 @@ export default function PostCard({ article }) {
         <Link to="/post/1" className={styles.title}>
           {article?.title}
         </Link>
-        <p className={styles.date}>{article?.publishedAt}</p>
+        <p className={styles.date}>{dayjs(article?.publishedAt).format("DD/MM/YYYY")}</p>
       </div>
     </>
   ) : (

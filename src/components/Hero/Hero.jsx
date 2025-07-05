@@ -3,14 +3,13 @@ import styles from "./Hero.module.scss";
 import { Link } from "react-router-dom";
 import newsApi from "../../api/NewsApi";
 import ArticleSkeleton from "../Skeleton/SkeletonArticle/SkeletonArticle";
+import dayjs from "dayjs";
 
 export default function Hero() {
   const [topHeadlinesArticles, setTopHeadlinesArticles] = useState([]);
   console.log("🚀 ~ Hero ~ topHeadlinesArticles:", topHeadlinesArticles);
-  // const [listArticles, setListArticles] = useState([]);
 
   const [loading, setLoading] = useState(true);
-  // const [loadingListArticles, setLoadingListArticles] = useState(true);
 
   const [firstArticle, ...subArticlesRest] = topHeadlinesArticles;
 
@@ -20,7 +19,7 @@ export default function Hero() {
         const res = await newsApi.get("/top-headlines", {
           params: {
             country: "us",
-            pageSize: 6,
+            pageSize: 5,
           },
         });
         setTopHeadlinesArticles(res.data.articles);
@@ -31,26 +30,6 @@ export default function Hero() {
       }
     }
     fetchNewsTopHeadlines();
-
-    // async function fetchNewsListArticles() {
-    //   try {
-    //     const res = await newsApi.get("/everything", {
-    //       params: {
-    //         q: "bitcoin",
-    //         pageSize: 10,
-    //       },
-    //     });
-    //     console.log("🚀 ~ fetchNewsListArticles ~ res:", res);
-
-    //     setListArticles(res.data.articles);
-    //   } catch (err) {
-    //     console.error("error get list articles: ", err);
-    //   } finally {
-    //     setLoadingListArticles(false);
-    //   }
-    // }
-
-    // fetchNewsListArticles();
   }, []);
 
   // if (loading) return <div>Loading artices...</div>;
@@ -62,22 +41,22 @@ export default function Hero() {
           {/* Main article - Left */}
 
           <div className={styles.mainArticle}>
-            <img src={firstArticle.urlToImage} alt="Top highline" />
+            <img src={firstArticle?.urlToImage} alt="Top highline" />
             <div className={styles.text}>
               <Link to="/post/1">
-                <h2>{firstArticle.title}</h2>
+                <h2>{firstArticle?.title}</h2>
               </Link>
-              <p>{firstArticle.description}</p>
-              <span className={styles.time}>{firstArticle.publishedAt}</span>
+              <p>{firstArticle?.description}</p>
+              <span className={styles.time}>{dayjs(firstArticle?.publishedAt).format("DD/MM/YYYY")}</span>
             </div>
           </div>
           {/* Sub-acticle - right */}
 
           <div className={styles.subArticles}>
             {subArticlesRest?.map((post, index) => (
-              <Link to={`/post/${post.id}`} key={index} className={styles.item}>
+              <Link to={`/post/${post?.id}`} key={index} className={styles.item}>
                 <img src={post?.urlToImage} alt={post?.title} />
-                <h4>{post.title}</h4>
+                <h4>{post?.title}</h4>
               </Link>
             ))}
           </div>

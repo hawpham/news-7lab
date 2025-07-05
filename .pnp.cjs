@@ -34,6 +34,7 @@ const RAW_RUNTIME_STATE =
           ["@vitejs/plugin-react", "virtual:ccfb4207744477e97eb389902409e96c62d2feea5e6f0111f66b2587dac2529e6c6c48c1e3a5c8402741c1becff4c299437a13f0f9c495317cd1286c50bb7342#npm:4.6.0"],\
           ["autoprefixer", "virtual:ccfb4207744477e97eb389902409e96c62d2feea5e6f0111f66b2587dac2529e6c6c48c1e3a5c8402741c1becff4c299437a13f0f9c495317cd1286c50bb7342#npm:10.4.21"],\
           ["axios", "npm:1.10.0"],\
+          ["dayjs", "npm:1.11.13"],\
           ["eslint", "virtual:ccfb4207744477e97eb389902409e96c62d2feea5e6f0111f66b2587dac2529e6c6c48c1e3a5c8402741c1becff4c299437a13f0f9c495317cd1286c50bb7342#npm:9.30.1"],\
           ["eslint-plugin-react-hooks", "virtual:ccfb4207744477e97eb389902409e96c62d2feea5e6f0111f66b2587dac2529e6c6c48c1e3a5c8402741c1becff4c299437a13f0f9c495317cd1286c50bb7342#npm:5.2.0"],\
           ["eslint-plugin-react-refresh", "virtual:ccfb4207744477e97eb389902409e96c62d2feea5e6f0111f66b2587dac2529e6c6c48c1e3a5c8402741c1becff4c299437a13f0f9c495317cd1286c50bb7342#npm:0.4.20"],\
@@ -1632,6 +1633,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["dayjs", [\
+      ["npm:1.11.13", {\
+        "packageLocation": "../../../../../.yarn/berry/cache/dayjs-npm-1.11.13-d478bb9479-10c0.zip/node_modules/dayjs/",\
+        "packageDependencies": [\
+          ["dayjs", "npm:1.11.13"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["debug", [\
       ["npm:4.4.1", {\
         "packageLocation": "../../../../../.yarn/berry/cache/debug-npm-4.4.1-6eab84b9f7-10c0.zip/node_modules/debug/",\
@@ -2853,6 +2863,7 @@ const RAW_RUNTIME_STATE =
           ["@vitejs/plugin-react", "virtual:ccfb4207744477e97eb389902409e96c62d2feea5e6f0111f66b2587dac2529e6c6c48c1e3a5c8402741c1becff4c299437a13f0f9c495317cd1286c50bb7342#npm:4.6.0"],\
           ["autoprefixer", "virtual:ccfb4207744477e97eb389902409e96c62d2feea5e6f0111f66b2587dac2529e6c6c48c1e3a5c8402741c1becff4c299437a13f0f9c495317cd1286c50bb7342#npm:10.4.21"],\
           ["axios", "npm:1.10.0"],\
+          ["dayjs", "npm:1.11.13"],\
           ["eslint", "virtual:ccfb4207744477e97eb389902409e96c62d2feea5e6f0111f66b2587dac2529e6c6c48c1e3a5c8402741c1becff4c299437a13f0f9c495317cd1286c50bb7342#npm:9.30.1"],\
           ["eslint-plugin-react-hooks", "virtual:ccfb4207744477e97eb389902409e96c62d2feea5e6f0111f66b2587dac2529e6c6c48c1e3a5c8402741c1becff4c299437a13f0f9c495317cd1286c50bb7342#npm:5.2.0"],\
           ["eslint-plugin-react-refresh", "virtual:ccfb4207744477e97eb389902409e96c62d2feea5e6f0111f66b2587dac2529e6c6c48c1e3a5c8402741c1becff4c299437a13f0f9c495317cd1286c50bb7342#npm:0.4.20"],\

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import styles from "./Sidebar.module.scss";
 import { Link } from "react-router-dom";
 import newsApi from "../../api/NewsApi";
+import dayjs from "dayjs";
 
 const latestPosts = [
   {
@@ -41,7 +42,7 @@ export default function Sidebar() {
         const res = await newsApi.get("/top-headlines", {
           params: {
             country: "us",
-            pageSize: 4,
+            pageSize: 5,
           },
         });
         setListArticles(res?.data?.articles);
@@ -61,10 +62,10 @@ export default function Sidebar() {
         {listArticles?.map((post, index) => (
           <li key={index} className={styles.postItem}>
             <Link to={`/post/${post.id}`}>
-              <img src={post.urlToImage} alt={post.title} />
+              <img src={post?.urlToImage} alt={post?.title} />
               <div className={styles.info}>
-                <h4>{post.title}</h4>
-                <span>{post.publishedAt}</span>
+                <h4>{post?.title}</h4>
+                <span>{dayjs(post?.publishedAt).format("DD/MM/YYYY")}</span>
               </div>
             </Link>
           </li>
