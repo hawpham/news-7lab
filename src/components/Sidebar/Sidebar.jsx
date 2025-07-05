@@ -1,5 +1,7 @@
+import { useEffect, useState } from "react";
 import styles from "./Sidebar.module.scss";
 import { Link } from "react-router-dom";
+import newsApi from "../../api/NewsApi";
 
 const latestPosts = [
   {
@@ -29,17 +31,40 @@ const latestPosts = [
 ];
 
 export default function Sidebar() {
+  const [listArticles, setListArticles] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    async function fatchNewsLatest() {
+      setLoading(true);
+      try {
+        const res = await newsApi.get("/top-headlines", {
+          params: {
+            country: "us",
+            pageSize: 4,
+          },
+        });
+        setListArticles(res?.data?.articles);
+      } catch (err) {
+        console.error(err);
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    fatchNewsLatest();
+  }, []);
   return (
     <aside className={styles.sidebar}>
       <h3 className={styles.heading}>Latest Posts</h3>
       <ul className={styles.list}>
-        {latestPosts.map((post) => (
-          <li key={post.id} className={styles.postItem}>
+        {listArticles?.map((post, index) => (
+          <li key={index} className={styles.postItem}>
             <Link to={`/post/${post.id}`}>
-              <img src={post.image} alt={post.title} />
+              <img src={post.urlToImage} alt={post.title} />
               <div className={styles.info}>
                 <h4>{post.title}</h4>
-                <span>{post.time}</span>
+                <span>{post.publishedAt}</span>
               </div>
             </Link>
           </li>

@@ -6,9 +6,10 @@ export default function NavBar() {
 
   return (
     <nav className={styles.navbar}>
-      {links.map((link) => (
-        // <a key={link} href="/">{link}</a>
-        <Link to="/">{link}</Link>
+      {links.map((link, index) => (
+        <Link key={index} to="/">
+          {link}
+        </Link>
       ))}
     </nav>
   );
