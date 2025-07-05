@@ -31,7 +31,7 @@ export default function Header() {
 
         {/* Navigation menu */}
         <nav className={`${styles.nav} ${menuOpen ? styles.open : ''}`}>
-          <NavLink to="/news">News</NavLink>
+          <NavLink to="/">News</NavLink>
           <NavLink to="/graphics">Graphics</NavLink>
           <NavLink to="/office">Office</NavLink>
           <NavLink to="/windows">Windows</NavLink>
