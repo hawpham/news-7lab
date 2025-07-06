@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import styles from "./Hero.module.scss";
 import { Link } from "react-router-dom";
-import newsApi from "../../api/NewsApi";
+import newsApi from "../../api/newsApi.js";
 import ArticleSkeleton from "../Skeleton/SkeletonArticle/SkeletonArticle";
 import dayjs from "dayjs";
 
@@ -12,6 +12,8 @@ export default function Hero() {
   const [loading, setLoading] = useState(true);
 
   const [firstArticle, ...subArticlesRest] = topHeadlinesArticles;
+  console.log("🚀 ~ Hero ~ firstArticle:", firstArticle);
+  console.log("🚀 ~ Hero ~ subArticlesRest:", subArticlesRest);
 
   useEffect(() => {
     async function fetchNewsTopHeadlines() {
@@ -44,7 +46,7 @@ export default function Hero() {
           <div className={styles.mainArticle}>
             <img src={firstArticle?.urlToImage || "https://placeholder.pics/svg/300/DEDEDE/555555/image"} alt="Top highline" />
             <div className={styles.text}>
-              <Link to={`/post/top-headlines/0`}>
+              <Link to={`/post/everything/0`}>
                 <h3>{firstArticle?.title}</h3>
               </Link>
               <p>{firstArticle?.description}</p>
@@ -55,7 +57,7 @@ export default function Hero() {
 
           <div className={styles.subArticles}>
             {subArticlesRest?.map((post, index) => (
-              <Link to={`/post/top-headlines/${index + 1}`} key={index} className={styles.item}>
+              <Link to={`/post/everything?q=headlines/${index + 1}`} key={index} className={styles.item}>
                 <img src={post?.urlToImage || "https://placeholder.pics/svg/300/DEDEDE/555555/image"} alt={post?.title} />
                 <h4>{post?.title}</h4>
               </Link>

@@ -1,9 +1,9 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import ArticleSkeleton from "../../components/Skeleton/SkeletonArticle/SkeletonArticle";
-import newsApi from "../../api/NewsApi";
+import newsApi from "../../api/newsApi.js";
 
-export default function DetailPage() {
+export default function PostDetail() {
   const { category, index } = useParams();
   const [article, setArticle] = useState(null);
   const [loading, setLoading] = useState(true);

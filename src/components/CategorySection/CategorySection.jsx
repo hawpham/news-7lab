@@ -2,7 +2,7 @@ import styles from "./CategorySection.module.scss";
 import { Link, useParams } from "react-router-dom";
 // import PostCard from "../PostCard/PostCard";
 import { useEffect, useState } from "react";
-import newsApi from "../../api/NewsApi";
+import newsApi from "../../api/newsApi.js";
 import ArticleSkeleton from "../Skeleton/SkeletonArticle/SkeletonArticle";
 
 export default function CategorySection({ title, viewAllLink, categoryArticles }) {

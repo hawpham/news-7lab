@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import styles from "./Sidebar.module.scss";
 import { Link } from "react-router-dom";
-import newsApi from "../../api/NewsApi";
+import newsApi from "../../api/newsApi.js";
 import dayjs from "dayjs";
 import ArticleSkeleton from "../Skeleton/SkeletonArticle/SkeletonArticle";
 
