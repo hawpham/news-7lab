@@ -6,21 +6,26 @@ import newsApi from "../../api/newsApi.js";
 export default function PostDetail() {
   const { category, index } = useParams();
   const [article, setArticle] = useState(null);
+  console.log("🚀 ~ PostDetail ~ article:", article);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function fetchCategoryArticles() {
       try {
         setLoading(true);
-        const res = await newsApi.get("/everything", {
-          params: {
-            q: category,
-            // country: "us",
-            pageSize: 5,
-          },
+        const res = await gnewsApi.get("/top-headlines", {
+          params: { topic: category },
         });
+        setArticle(res?.data?.articles[index]);
+        // const res = await newsApi.get("/everything", {
+        //   params: {
+        //     q: category,
+        //     // country: "us",
+        //     pageSize: 5,
+        //   },
+        // });
 
-        setArticle(res.data.articles[index]);
+        // setArticle(res.data.articles[index]);
       } catch (err) {
         console.error("ERROR fetch articles: ", err);
       } finally {
@@ -29,8 +34,9 @@ export default function PostDetail() {
     }
 
     fetchCategoryArticles();
-  }, []);
+  }, [category, index]);
   // category, index
+
   if (!article)
     return (
       <>
@@ -41,7 +47,7 @@ export default function PostDetail() {
   return (
     <div style={{ padding: "20px", maxWidth: "800px", margin: "0 auto" }}>
       <h1>{article.title}</h1>
-      <img src={article.urlToImage} alt={article.title} style={{ width: "100%", marginBottom: "20px" }} />
+      <img src={article.image} alt={article.title} style={{ width: "100%", marginBottom: "20px" }} />
       <p>{article.content || article.description}</p>
       <p>
         <i>{new Date(article.publishedAt).toLocaleString("vi-VN")}</i>

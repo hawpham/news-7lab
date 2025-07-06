@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import styles from "./Sidebar.module.scss";
 import { Link } from "react-router-dom";
-import newsApi from "../../api/newsApi.js";
+// import newsApi from "../../api/newsApi.js";
 import dayjs from "dayjs";
 import SkeletonArticle from "../Skeleton/SkeletonArticle/SkeletonArticle";
+import gnewsApi from "../../api/gnewsApi.js";
 
 const latestPosts = [
   {
@@ -40,13 +41,17 @@ export default function Sidebar() {
     async function fatchNewsLatest() {
       setLoading(true);
       try {
-        const res = await newsApi.get("/top-headlines", {
-          params: {
-            country: "us",
-            pageSize: 5,
-          },
+        const res = await gnewsApi.get("/top-headlines", {
+          params: { topic: "breaking-news" },
         });
-        setListArticles(res?.data?.articles);
+        setListArticles(res.data.articles);
+        // const res = await newsApi.get("/top-headlines", {
+        //   params: {
+        //     country: "us",
+        //     pageSize: 5,
+        //   },
+        // });
+        // setListArticles(res?.data?.articles);
       } catch (err) {
         console.error(err);
       } finally {
@@ -64,7 +69,7 @@ export default function Sidebar() {
           listArticles?.map((post, index) => (
             <li key={index} className={styles.postItem}>
               <Link to={`/post/${post.id}`}>
-                <img src={post?.urlToImage || "https://placeholder.pics/svg/300/DEDEDE/555555/image"} alt={post?.title} />
+                <img src={post?.image || "https://placeholder.pics/svg/300/DEDEDE/555555/image"} alt={post?.title} />
                 <div className={styles.info}>
                   <h4>{post?.title}</h4>
                   <span>{dayjs(post?.publishedAt).format("DD/MM/YYYY")}</span>

@@ -1,0 +1,26 @@
+{
+  "status": "ok",
+  "totalResults": 2,
+  "articles": [
+    {
+      "source": { "id": null, "name": "TechCrunch" },
+      "author": "John Doe",
+      "title": "AI is transforming the world",
+      "description": "AI is changing industries rapidly...",
+      "url": "https://techcrunch.com/article-1",
+      "urlToImage": "https://example.com/image1.jpg",
+      "publishedAt": "2025-07-05T12:00:00Z",
+      "content": "Full content of article 1."
+    },
+    {
+      "source": { "id": null, "name": "BBC News" },
+      "author": "Jane Smith",
+      "title": "Global markets update",
+      "description": "Stocks rose across major indexes...",
+      "url": "https://bbc.com/article-2",
+      "urlToImage": "https://example.com/image2.jpg",
+      "publishedAt": "2025-07-05T15:00:00Z",
+      "content": "Full content of article 2."
+    }
+  ]
+}
