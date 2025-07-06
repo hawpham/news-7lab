@@ -7,7 +7,7 @@ export default function PostCard({ article }) {
   return !article?.length > 0 ? (
     <>
       <div className={styles.card}>
-        <img src={article?.urlToImage} alt="post" className={styles.image} />
+        <img src={article?.urlToImage || "https://placeholder.pics/svg/300/DEDEDE/555555/image"} alt="post" className={styles.image} />
         <Link to="/post/1" className={styles.title}>
           {article?.title}
         </Link>

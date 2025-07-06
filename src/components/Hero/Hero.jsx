@@ -36,12 +36,12 @@ export default function Hero() {
 
   return (
     <section className={styles.hero}>
-      {!loading && firstArticle?.length > 0 ? (
+      {!loading && topHeadlinesArticles?.length ? (
         <>
           {/* Main article - Left */}
 
           <div className={styles.mainArticle}>
-            <img src={firstArticle?.urlToImage} alt="Top highline" />
+            <img src={firstArticle?.urlToImage || "https://placeholder.pics/svg/300/DEDEDE/555555/image"} alt="Top highline" />
             <div className={styles.text}>
               <Link to="/post/1">
                 <h2>{firstArticle?.title}</h2>
@@ -55,7 +55,7 @@ export default function Hero() {
           <div className={styles.subArticles}>
             {subArticlesRest?.map((post, index) => (
               <Link to={`/post/${post?.id}`} key={index} className={styles.item}>
-                <img src={post?.urlToImage} alt={post?.title} />
+                <img src={post?.urlToImage || "https://placeholder.pics/svg/300/DEDEDE/555555/image"} alt={post?.title} />
                 <h4>{post?.title}</h4>
               </Link>
             ))}

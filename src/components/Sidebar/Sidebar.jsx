@@ -64,7 +64,7 @@ export default function Sidebar() {
           listArticles?.map((post, index) => (
             <li key={index} className={styles.postItem}>
               <Link to={`/post/${post.id}`}>
-                <img src={post?.urlToImage} alt={post?.title} />
+                <img src={post?.urlToImage || "https://placeholder.pics/svg/300/DEDEDE/555555/image"} alt={post?.title} />
                 <div className={styles.info}>
                   <h4>{post?.title}</h4>
                   <span>{dayjs(post?.publishedAt).format("DD/MM/YYYY")}</span>

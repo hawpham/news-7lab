@@ -39,7 +39,14 @@ export default function CategorySection({ title, viewAllLink, categoryArticles }
       </div>
       <div className={styles.grid}>
         {/* Posts */}
-        {!loading && listArticles?.length ? listArticles?.map((article, index) => <PostCard key={index} article={article} />) : <ArticleSkeleton />}
+        {!loading && listArticles?.length ? (
+          listArticles?.map((article, index) => <PostCard key={index} article={article} />)
+        ) : (
+          <>
+            <ArticleSkeleton />
+            <ArticleSkeleton />
+          </>
+        )}
       </div>
     </section>
   );
