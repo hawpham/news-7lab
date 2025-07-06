@@ -1,7 +1,8 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import SkeletonArticle from "../../components/Skeleton/SkeletonArticle/SkeletonArticle";
-import newsApi from "../../api/newsApi.js";
+// import newsApi from "../../api/newsApi.js";
+import gnewsApi from "../../api/gnewsApi.js";
 
 export default function PostDetail() {
   const { category, index } = useParams();
