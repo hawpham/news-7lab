@@ -3,7 +3,7 @@ import styles from "./Sidebar.module.scss";
 import { Link } from "react-router-dom";
 import newsApi from "../../api/newsApi.js";
 import dayjs from "dayjs";
-import ArticleSkeleton from "../Skeleton/SkeletonArticle/SkeletonArticle";
+import SkeletonArticle from "../Skeleton/SkeletonArticle/SkeletonArticle";
 
 const latestPosts = [
   {
@@ -74,9 +74,9 @@ export default function Sidebar() {
           ))
         ) : (
           <>
-            <ArticleSkeleton />
-            <ArticleSkeleton />
-            <ArticleSkeleton />
+            <SkeletonArticle />
+            <SkeletonArticle />
+            <SkeletonArticle />
           </>
         )}
       </ul>

@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import ArticleSkeleton from "../../components/Skeleton/SkeletonArticle/SkeletonArticle";
+import SkeletonArticle from "../../components/Skeleton/SkeletonArticle/SkeletonArticle";
 import newsApi from "../../api/newsApi.js";
 
 export default function PostDetail() {
@@ -34,7 +34,7 @@ export default function PostDetail() {
   if (!article)
     return (
       <>
-        <ArticleSkeleton />
+        <SkeletonArticle />
       </>
     );
 

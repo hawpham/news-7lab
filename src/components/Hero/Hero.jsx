@@ -2,18 +2,15 @@ import { useEffect, useState } from "react";
 import styles from "./Hero.module.scss";
 import { Link } from "react-router-dom";
 import newsApi from "../../api/newsApi.js";
-import ArticleSkeleton from "../Skeleton/SkeletonArticle/SkeletonArticle";
+import SkeletonArticle from "../Skeleton/SkeletonArticle/SkeletonArticle";
 import dayjs from "dayjs";
 
 export default function Hero() {
   const [topHeadlinesArticles, setTopHeadlinesArticles] = useState([]);
-  console.log("🚀 ~ Hero ~ topHeadlinesArticles:", topHeadlinesArticles);
   // const [category, index] = useParams()
   const [loading, setLoading] = useState(true);
 
   const [firstArticle, ...subArticlesRest] = topHeadlinesArticles;
-  console.log("🚀 ~ Hero ~ firstArticle:", firstArticle);
-  console.log("🚀 ~ Hero ~ subArticlesRest:", subArticlesRest);
 
   useEffect(() => {
     async function fetchNewsTopHeadlines() {
@@ -68,13 +65,13 @@ export default function Hero() {
         <>
           {/* Show Skeleton */}
           <div className={styles.mainArticle}>
-            <ArticleSkeleton />
+            <SkeletonArticle />
           </div>
           <div className={styles.subArticles}>
-            <ArticleSkeleton />
-            <ArticleSkeleton />
-            <ArticleSkeleton />
-            <ArticleSkeleton />
+            <SkeletonArticle />
+            <SkeletonArticle />
+            <SkeletonArticle />
+            <SkeletonArticle />
           </div>
         </>
       )}

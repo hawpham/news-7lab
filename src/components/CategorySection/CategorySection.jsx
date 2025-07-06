@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 // import PostCard from "../PostCard/PostCard";
 import { useEffect, useState } from "react";
 import newsApi from "../../api/newsApi.js";
-import ArticleSkeleton from "../Skeleton/SkeletonArticle/SkeletonArticle";
+import SkeletonArticle from "../Skeleton/SkeletonArticle/SkeletonArticle";
 
 export default function CategorySection({ title, viewAllLink, categoryArticles }) {
   const [listArticles, setListArticles] = useState([]);
@@ -40,7 +40,7 @@ export default function CategorySection({ title, viewAllLink, categoryArticles }
       </div>
       <div className={styles.grid}>
         {/* Posts */}
-        {listArticles?.map((item, index) => (
+        {/* {listArticles?.map((item, index) => (
           <div key={index} style={{ marginBottom: "20px" }}>
             <img src={item.urlToImage} alt="" style={{ width: "100%", maxWidth: "400px" }} />
             <Link to={`/post/${categoryArticles}/${index}`}>
@@ -48,15 +48,25 @@ export default function CategorySection({ title, viewAllLink, categoryArticles }
             </Link>
             <p className={styles.description}>{item?.description?.slice(0, 70)}...</p>
           </div>
-        ))}
-        {/* {!loading && listArticles?.length ? (
-          listArticles?.map((article, index) => <PostCard key={index} article={article} />)
+        ))} */}
+        {!loading && listArticles?.length ? (
+          // listArticles?.map((article, index) => <PostCard key={index} article={article} />)
+
+          listArticles?.map((item, index) => (
+            <div key={index} style={{ marginBottom: "20px" }}>
+              <img src={item.urlToImage} alt="" style={{ width: "100%", maxWidth: "400px" }} />
+              <Link to={`/post/${categoryArticles}/${index}`}>
+                <h4 className={styles.title}>{item?.title}</h4>
+              </Link>
+              <p className={styles.description}>{item?.description?.slice(0, 70)}...</p>
+            </div>
+          ))
         ) : (
           <>
-            <ArticleSkeleton />
-            <ArticleSkeleton />
+            <SkeletonArticle />
+            <SkeletonArticle />
           </>
-        )} */}
+        )}
       </div>
     </section>
   );

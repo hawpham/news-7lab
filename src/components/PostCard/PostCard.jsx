@@ -1,4 +1,4 @@
-import ArticleSkeleton from "../Skeleton/SkeletonArticle/SkeletonArticle";
+import SkeletonArticle from "../Skeleton/SkeletonArticle/SkeletonArticle";
 import styles from "./PostCard.module.scss";
 import { Link } from "react-router-dom";
 import dayjs from "dayjs";
@@ -16,7 +16,7 @@ export default function PostCard({ article }) {
     </>
   ) : (
     <>
-      <ArticleSkeleton />
+      <SkeletonArticle />
     </>
   );
 }

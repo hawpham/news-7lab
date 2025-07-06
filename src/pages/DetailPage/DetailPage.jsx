@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import ArticleSkeleton from "../../components/Skeleton/SkeletonArticle/SkeletonArticle";
-import newsApi from "../../api/NewsApi";
+import SkeletonArticle from "../../components/Skeleton/SkeletonArticle/SkeletonArticle";
+import newsApi from "../../api/newsApi.js";
 
 export default function DetailPage() {
   const { category, index } = useParams();
@@ -34,7 +34,7 @@ export default function DetailPage() {
   if (!article)
     return (
       <>
-        <ArticleSkeleton />
+        <SkeletonArticle />
       </>
     );
 
