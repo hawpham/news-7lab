@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import SkeletonArticle from "../../components/Skeleton/SkeletonArticle/SkeletonArticle";
 // import newsApi from "../../api/newsApi.js";
 import gnewsApi from "../../api/gnewsApi.js";
+import styles from "./PostDetail.module.scss";
 
 export default function PostDetail() {
   const { category, index } = useParams();
@@ -46,14 +47,16 @@ export default function PostDetail() {
     );
 
   return (
-    <div style={{ padding: "20px", maxWidth: "800px", margin: "0 auto" }}>
-      <h1>{article.title}</h1>
-      <img src={article.image} alt={article.title} style={{ width: "100%", marginBottom: "20px" }} />
-      <p>{article.content || article.description}</p>
-      <p>
-        <i>{new Date(article.publishedAt).toLocaleString("vi-VN")}</i>
-      </p>
-    </div>
+    <main className={styles.postDetail}>
+      <div style={{ padding: "20px", maxWidth: "800px", margin: "0 auto" }}>
+        <h1 className={styles.title}>{article.title}</h1>
+        <img src={article.image} alt={article.title} style={{ width: "100%", marginBottom: "20px" }} />
+        <p>{article.content || article.description}</p>
+        <p>
+          <i>{new Date(article.publishedAt).toLocaleString("vi-VN")}</i>
+        </p>
+      </div>
+    </main>
   );
 }
 
