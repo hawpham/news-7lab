@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_KEY = "51006e3f101ac6e78a83f30c69b67c88";
+const API_KEY = import.meta.env.NEWS_API_KEY;
 
 const gnewsApi = axios.create({
   baseURL: "https://gnews.io/api/v4",
