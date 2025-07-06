@@ -1,7 +1,7 @@
-import React from 'react'
-import styles from './Section.module.scss'
+import React from "react";
+import styles from "./Section.module.scss";
 
-function Section({title, category}) {
+function Section({ title, category }) {
   return (
     <section className={styles.section}>
       <h3>{title}</h3>
@@ -14,7 +14,7 @@ function Section({title, category}) {
         ))}
       </div>
     </section>
-  )
+  );
 }
 
-export default Section
+export default Section;

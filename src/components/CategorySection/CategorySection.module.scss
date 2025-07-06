@@ -10,6 +10,19 @@
   align-items: center;
   margin-bottom: 12px;
 }
+.title {
+  font-weight: 500;
+  font-size: 14px;
+  padding: 4px 0 5px;
+
+  &:hover {
+    color: #006ba0;
+  }
+}
+.description {
+  font-size: 13px;
+  font-weight: normal;
+}
 
 .grid {
   display: grid;
