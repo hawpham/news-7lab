@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import newsApi from "../../api/NewsApi";
 import ArticleSkeleton from "../../components/Skeleton/SkeletonArticle/SkeletonArticle";
+import newsApi from "../../api/NewsApi";
 
 export default function DetailPage() {
   const { category, index } = useParams();
