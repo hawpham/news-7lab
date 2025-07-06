@@ -16,7 +16,8 @@ export default function CategorySection({ title, viewAllLink, categoryArticles }
       try {
         const res = await newsApi.get("/everything", {
           params: {
-            q: categoryArticles ?? "bitcoin",
+            q: categoryArticles ?? "",
+            // country: "us",
             pageSize: 4,
           },
         });

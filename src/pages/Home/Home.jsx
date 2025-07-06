@@ -1,11 +1,7 @@
 import styles from "./Home.module.scss";
-// import FeaturePost from '../../components/FeaturedPost/FeaturedPost';
 import CategorySection from "../../components/CategorySection/CategorySection";
 import Sidebar from "../../components/Sidebar/Sidebar";
 import Hero from "../../components/Hero/Hero";
-// import { useEffect, useState } from "react";
-// import newsApi from "../../api/NewsApi.js";
-
 export default function Home() {
   // if (loading) return <div>Loading articles...</div>;
 

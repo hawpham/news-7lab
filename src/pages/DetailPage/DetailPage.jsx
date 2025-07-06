@@ -15,6 +15,7 @@ export default function DetailPage() {
         const res = await newsApi.get("/everything", {
           params: {
             q: category,
+            // country: "us",
             pageSize: 5,
           },
         });

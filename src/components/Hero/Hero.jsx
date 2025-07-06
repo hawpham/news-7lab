@@ -16,13 +16,14 @@ export default function Hero() {
   useEffect(() => {
     async function fetchNewsTopHeadlines() {
       try {
-        const res = await newsApi.get("/top-headlines", {
+        const res = await newsApi.get("/everything", {
           params: {
-            country: "us",
+            // country: "us",
+            q: "headlines",
             pageSize: 5,
           },
         });
-        setTopHeadlinesArticles(res.data.articles);
+        setTopHeadlinesArticles(res?.data?.articles);
       } catch (err) {
         console.error("error get top Headlines articles: ", err);
       } finally {

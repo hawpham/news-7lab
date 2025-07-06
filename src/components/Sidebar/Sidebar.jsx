@@ -58,7 +58,7 @@ export default function Sidebar() {
   }, []);
   return (
     <aside className={styles.sidebar}>
-      <h3 className={styles.heading}>Latest Posts</h3>
+      <h3 className={styles.heading}>Top Headlines</h3>
       <ul className={styles.list}>
         {!loading && listArticles?.length ? (
           listArticles?.map((post, index) => (
