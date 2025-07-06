@@ -7,30 +7,6 @@ import Hero from "../../components/Hero/Hero";
 // import newsApi from "../../api/NewsApi.js";
 
 export default function Home() {
-  // const [topHeadlinesArticles, setTopHeadlinesArticles] = useState([]);
-  // const [loading, setLoading] = useState(true);
-
-  // useEffect(() => {
-  //   async function fetchNews() {
-  //     try {
-  //       const res = await newsApi.get("/top-headlines", {
-  //         params: {
-  //           country: "us",
-  //           pageSize: 8,
-  //         },
-  //       });
-
-  //       setTopHeadlinesArticles(res.data.articles);
-  //     } catch (err) {
-  //       console.error("error get articles: ", err);
-  //     } finally {
-  //       setLoading(false);
-  //     }
-  //   }
-
-  //   fetchNews();
-  // }, []);
-
   // if (loading) return <div>Loading articles...</div>;
 
   return (

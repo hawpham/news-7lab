@@ -1,14 +1,14 @@
 import styles from "./CategorySection.module.scss";
-import { Link } from "react-router-dom";
-import PostCard from "../PostCard/PostCard";
+import { Link, useParams } from "react-router-dom";
+// import PostCard from "../PostCard/PostCard";
 import { useEffect, useState } from "react";
 import newsApi from "../../api/NewsApi";
 import ArticleSkeleton from "../Skeleton/SkeletonArticle/SkeletonArticle";
 
 export default function CategorySection({ title, viewAllLink, categoryArticles }) {
-  console.log("🚀 ~ CategorySection ~ categoryArticles:", categoryArticles);
   const [listArticles, setListArticles] = useState([]);
   const [loading, setLoading] = useState(true);
+  // const { category } = useParams();
 
   useEffect(() => {
     async function fetchNewsListArticles() {
@@ -39,14 +39,23 @@ export default function CategorySection({ title, viewAllLink, categoryArticles }
       </div>
       <div className={styles.grid}>
         {/* Posts */}
-        {!loading && listArticles?.length ? (
+        {listArticles?.map((item, index) => (
+          <div key={index} style={{ marginBottom: "20px" }}>
+            <img src={item.urlToImage} alt="" style={{ width: "100%", maxWidth: "400px" }} />
+            <Link to={`/post/${categoryArticles}/${index}`}>
+              <h4 className={styles.title}>{item?.title}</h4>
+            </Link>
+            <p className={styles.description}>{item?.description?.slice(0, 70)}...</p>
+          </div>
+        ))}
+        {/* {!loading && listArticles?.length ? (
           listArticles?.map((article, index) => <PostCard key={index} article={article} />)
         ) : (
           <>
             <ArticleSkeleton />
             <ArticleSkeleton />
           </>
-        )}
+        )} */}
       </div>
     </section>
   );
