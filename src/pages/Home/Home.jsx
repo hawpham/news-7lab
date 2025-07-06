@@ -15,7 +15,7 @@ export default function Home() {
         <CategorySection title="News" viewAllLink="/news" categoryArticles="apple" />
         <CategorySection title="Mobile" viewAllLink="/mobile" categoryArticles="mobile" />
         <CategorySection title="Windows" viewAllLink="/windows" categoryArticles="windows" />
-        <CategorySection title="Software" viewAllLink="/software" categoryArticles="software" />
+        <CategorySection title="Software" viewAllLink="/software" categoryArticles="technology" />
       </div>
 
       <aside className={styles.sidebar}>

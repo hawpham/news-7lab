@@ -2,8 +2,9 @@ import styles from "./CategorySection.module.scss";
 import { Link, useParams } from "react-router-dom";
 // import PostCard from "../PostCard/PostCard";
 import { useEffect, useState } from "react";
-import newsApi from "../../api/newsApi.js";
+// import newsApi from "../../api/newsApi.js";
 import SkeletonArticle from "../Skeleton/SkeletonArticle/SkeletonArticle";
+import gnewsApi from "../../api/gnewsApi.js";
 
 export default function CategorySection({ title, viewAllLink, categoryArticles }) {
   const [listArticles, setListArticles] = useState([]);
@@ -14,13 +15,16 @@ export default function CategorySection({ title, viewAllLink, categoryArticles }
     async function fetchNewsListArticles() {
       setLoading(true);
       try {
-        const res = await newsApi.get("/everything", {
-          params: {
-            q: categoryArticles ?? "",
-            // country: "us",
-            pageSize: 4,
-          },
+        const res = await gnewsApi.get("/top-headlines", {
+          params: { topic: categoryArticles },
         });
+        // const res = await newsApi.get("/everything", {
+        //   params: {
+        //     q: categoryArticles ?? "",
+        //     // country: "us",
+        //     pageSize: 4,
+        //   },
+        // });
 
         setListArticles(res?.data?.articles);
       } catch (err) {
@@ -51,10 +55,9 @@ export default function CategorySection({ title, viewAllLink, categoryArticles }
         ))} */}
         {!loading && listArticles?.length ? (
           // listArticles?.map((article, index) => <PostCard key={index} article={article} />)
-
           listArticles?.map((item, index) => (
             <div key={index} style={{ marginBottom: "20px" }}>
-              <img src={item.urlToImage} alt="" style={{ width: "100%", maxWidth: "400px" }} />
+              <img src={item.image} alt="" style={{ width: "100%", height: "130px", objectFit: "cover" }} />
               <Link to={`/post/${categoryArticles}/${index}`}>
                 <h4 className={styles.title}>{item?.title}</h4>
               </Link>
