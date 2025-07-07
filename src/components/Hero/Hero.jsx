@@ -51,8 +51,8 @@ export default function Hero() {
               <Link to={`/post/world/0`}>
                 <h3>{firstArticle?.title}</h3>
               </Link>
-              <p>{firstArticle?.description}</p>
-              <span className={styles.time}>{dayjs(firstArticle?.publishedAt).format("DD/MM/YYYY")}</span>
+              {/* <p>{firstArticle?.description}</p> */}
+              {/* <span className={styles.time}>{dayjs(firstArticle?.publishedAt).format("DD/MM/YYYY")}</span> */}
             </div>
           </div>
           {/* Sub-acticle - right */}

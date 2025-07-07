@@ -56,11 +56,14 @@ export default function CategorySection({ title, viewAllLink, categoryArticles }
         {!loading && listArticles?.length ? (
           // listArticles?.map((article, index) => <PostCard key={index} article={article} />)
           listArticles?.map((item, index) => (
-            <div key={index} style={{ marginBottom: "20px" }}>
-              <img src={item.image} alt="" style={{ width: "100%", height: "130px", objectFit: "cover" }} />
-              <Link to={`/post/${categoryArticles}/${index}`}>
-                <h4 className={styles.title}>{item?.title}</h4>
-              </Link>
+            <div className={styles.categorySection} key={index}>
+              <div className={styles.categoryContent}>
+                <img src={item.image} className={styles.categoryImage} />
+
+                <Link to={`/post/${categoryArticles}/${index}`}>
+                  <h4 className={styles.title}>{item?.title}</h4>
+                </Link>
+              </div>
               <p className={styles.description}>{item?.description?.slice(0, 70)}...</p>
             </div>
           ))
