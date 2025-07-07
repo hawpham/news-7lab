@@ -1,26 +1,366 @@
 {
   "status": "ok",
-  "totalResults": 2,
+  "totalArticles": 7074496,
   "articles": [
     {
-      "source": { "id": null, "name": "TechCrunch" },
-      "author": "John Doe",
-      "title": "AI is transforming the world",
-      "description": "AI is changing industries rapidly...",
-      "url": "https://techcrunch.com/article-1",
-      "urlToImage": "https://example.com/image1.jpg",
-      "publishedAt": "2025-07-05T12:00:00Z",
-      "content": "Full content of article 1."
+      "title": "Parkinson: la maladie évolue en fonction du côté du corps atteint",
+      "description": "Il est possible de prédire l'évolution à long terme de la maladie de Parkinson en fonction du côté du corps touché par les premiers symptômes. À droite, le déclin cognitif sera plus marqué, alors qu'à gauche, le malade souffrira de troubles psychiatriques plus sévères, relèvent lundi dans un communiqué les Hôpitaux universitaires de Genève (HUG) et l'Université de Genève (UNIGE).",
+      "content": "Il s'avère que les patients et les patientes qui ont, au début, des difficultés motrices du côté droit, présentent un déclin cognitif plus global et un risque de démence plus élevé. Lorsque les premiers symptômes de la maladie se signalent à gauche, ... [703 chars]",
+      "url": "https://www.lalibre.be/dernieres-depeches/2025/07/07/parkinson-la-maladie-evolue-en-fonction-du-cote-du-corps-atteint-PE4R435YN5E5DFTJYHZZ6AGPBE/",
+      "image": "https://www.lalibre.be/resizer/v2/ODKLKJBY5JHBZGGEX5JO7VIOG4.png?auth=99992c0249edfd0f59ed7caae24c0f483574cfcaa1b362acfcac9717c690a301&width=1200&height=630&quality=85&smart=true",
+      "publishedAt": "2025-07-07T11:24:00Z",
+      "source": {
+        "name": "La Libre.be",
+        "url": "https://www.lalibre.be"
+      }
     },
     {
-      "source": { "id": null, "name": "BBC News" },
-      "author": "Jane Smith",
-      "title": "Global markets update",
-      "description": "Stocks rose across major indexes...",
-      "url": "https://bbc.com/article-2",
-      "urlToImage": "https://example.com/image2.jpg",
-      "publishedAt": "2025-07-05T15:00:00Z",
-      "content": "Full content of article 2."
+      "title": "Zu freizügig fürs TV?: DAZN-Moderatorin Eleonora Incardona sorgt für Wirbel",
+      "description": "Sex sells - das weiß man auch beim Sport-Streamingdienst DAZN. Wenn es um die Moderation geht, scheint Kompetenz deshalb nicht immer die oberste Priorität zu haben. Hat es Kommentatorin Eleonora Incardona nun bei der Klub-WM übertrieben?",
+      "content": "Sex sells - das weiß man auch beim Sport-Streamingdienst DAZN. Wenn es um die Moderation geht, scheint Kompetenz deshalb nicht immer die oberste Priorität zu haben. Hat es Kommentatorin Eleonora Incardona nun bei der Klub-WM übertrieben?\n2016 gegründ... [2942 chars]",
+      "url": "https://www.n-tv.de/leute/DAZN-Moderatorin-Eleonora-Incardona-sorgt-fuer-Wirbel-article25883830.html",
+      "image": "https://www.n-tv.de/img/incoming/crop25883825/1361326707-cImg_16_9-w1200/imago1061982732.jpg",
+      "publishedAt": "2025-07-07T11:13:00Z",
+      "source": {
+        "name": "N-TV",
+        "url": "https://www.n-tv.de"
+      }
+    },
+    {
+      "title": "Tamil Nadu first to integrate ‘predicted possibility of TB deaths’ in patients to its State TB elimination programme",
+      "description": "Tamil Nadu integrates predictive model to reduce TB deaths, prioritizing severely ill patients for prompt hospital admission.",
+      "content": "To reduce the average time from diagnosis to hospital admission for severely ill tuberculosis (TB) patients, Tamil Nadu has become the first State in the country to integrate a model that predicts the possibility of TB deaths among patients with the ... [2676 chars]",
+      "url": "https://www.thehindu.com/sci-tech/health/tamil-nadu-first-to-integrate-predicted-possibility-of-tb-deaths-in-patients-to-its-state-tb-elimination-programme/article69782992.ece",
+      "image": "https://th-i.thgim.com/public/incoming/fwb6ms/article69783410.ece/alternates/LANDSCAPE_1200/tb_day_3.jpg",
+      "publishedAt": "2025-07-07T11:12:00Z",
+      "source": {
+        "name": "The Hindu",
+        "url": "https://www.thehindu.com"
+      }
+    },
+    {
+      "title": "У Росії прокоментували удари по українських ТЦК",
+      "description": "Ворог прокоментував удари по територіальних центрах комплектування в Україні. У Міністерстві оборони РФ заявили, що такі атаки завдаються цілеспрямовано.",
+      "content": "Росіяни стали частіше атакувати територіальні центри комплектування та соціальної підтримки в Україні.\nУ Росії прокоментували нещодавні удари по територіальних центрах комплектування та соціальної підтримки (ТЦК і СП) в Україні. У Міністерстві оборон... [1404 chars]",
+      "url": "https://www.unian.ua/war/tck-v-ukrajini-u-rosiji-prokomentuvali-udari-po-ukrajinskih-ob-yektah-13060056.html",
+      "image": "https://images.unian.net/photos/2025_07/thumb_files/1000_545_1751885741-6448.jpg?1",
+      "publishedAt": "2025-07-07T11:00:00Z",
+      "source": {
+        "name": "УНІАН",
+        "url": "https://www.unian.ua"
+      }
+    },
+    {
+      "title": "Survival Kids review: Cosy castaway capers",
+      "description": "The launch line-up of Switch 2 handheld couldn’t have been more barebones, comprising just a couple of fresh offerings from Nintendo and a handful from other publishers.",
+      "content": "Platform: Switch 2Age: 7+Verdict: ★★★☆☆\nThe launch line-up of Switch 2 handheld couldn’t have been more barebones, comprising just a couple of fresh offerings from Nintendo and a handful from other publishers.\nSurvival Kids fits into the latter categ... [2451 chars]",
+      "url": "https://www.independent.ie/entertainment/games/survival-kids-review-cosy-castaway-capers/a148668740.html",
+      "image": "https://focus.independent.ie/thumbor/85EjQZq6xZB0JgJRMSU5LLvF-Mk=/300x0:3540x2160/629x0/prod-mh-ireland/ddcdc30a-f0a9-41be-a195-e1c9f1b742b0/3a7943ba-9907-42b3-b1d4-94d8e187e3c6/ddcdc30a-f0a9-41be-a195-e1c9f1b742b0.jpg",
+      "publishedAt": "2025-07-07T11:00:00Z",
+      "source": {
+        "name": "The Irish Independent",
+        "url": "https://www.independent.ie"
+      }
+    },
+    {
+      "title": "M60 traffic LIVE updates as motorway CLOSED following crash",
+      "description": "Emergency services are at the scene",
+      "content": "Drivers have been stopped on the M60 in both directions following a crash.\nTraffic is being held between junctions 27 at the Portwood roundabout and junction one for the Stockport Pyramid this morning (July 7).\nQueues are building up in both directio... [826 chars]",
+      "url": "https://www.manchestereveningnews.co.uk/news/greater-manchester-news/m60-traffic-live-updates-motorway-32008269",
+      "image": "https://i2-prod.manchestereveningnews.co.uk/incoming/article32008912.ece/ALTERNATES/s1200/0_image.png",
+      "publishedAt": "2025-07-07T10:57:00Z",
+      "source": {
+        "name": "Manchester Evening News",
+        "url": "https://www.manchestereveningnews.co.uk"
+      }
+    },
+    {
+      "title": "Not his double ton or Akash Deep’s 10-fer! Shubman Gill shares most special Edgbaston moment - Watch",
+      "description": "Cricket News: Shubman Gill expressed immense pride after India's dominant 337-run victory over England at Edgbaston, emphasizing the team's all-round performance an",
+      "content": "India's captain Shubman Gill waves to the fans after their win against England on day five of the second cricket test match at Edgbaston in Birmingham, England. (AP/PTI)(AP07_06_2025_000446B)\nShubman Gill, Gautam Gambhir shut critics with thumping wi... [1922 chars]",
+      "url": "https://timesofindia.indiatimes.com/sports/cricket/india-tour-of-england/not-his-double-ton-or-akash-deeps-10-fer-shubman-gill-shares-most-special-edgbaston-moment-watch/articleshow/122297494.cms",
+      "image": "https://static.toiimg.com/thumb/msid-122297545,width-1070,height-580,imgsize-119450,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+      "publishedAt": "2025-07-07T10:52:00Z",
+      "source": {
+        "name": "Times of India",
+        "url": "https://timesofindia.indiatimes.com"
+      }
+    },
+    {
+      "title": "FC Bayern: Wadenbein-OP in Murnau! Musiala-Ärzte retteten schon Neuers Karriere!",
+      "description": "Jamal Musiala nach seinem Wadenbeinbruch bei der Klub-WM zur OP in Murnau: Bei diesen Ärzten ist der Superstar des FC Bayern in den besten Händen!",
+      "content": "Schrie laut vor Schmerzen: Jamal Musiala verdrehte sich am Samstag das linke Sprunggelenk und\nHier ist der Superstar des FC Bayern in den besten Händen!\nNach BILD-Informationen wird Offensiv-Star Jamal Musiala (22/Wadenbeinbruch plus Bänder-Verletzun... [3845 chars]",
+      "url": "https://www.bild.de/sport/fussball/fc-bayern-wadenbein-op-in-murnau-musiala-aerzte-retteten-schon-neuers-karriere-686b735198601a33926608c9",
+      "image": "https://images.bild.de/686b735198601a33926608c9/e34655c7f6e1f1bf2d1f229e7f2cea32,b99325a8?w=1280",
+      "publishedAt": "2025-07-07T10:48:30Z",
+      "source": {
+        "name": "BILD.de",
+        "url": "https://www.bild.de"
+      }
+    },
+    {
+      "title": "В Украину идет циклон \"Габриэль\"",
+      "description": "8 июля на погоду в Украине повлияет циклон Gabriel. Синоптик Наталья Диденко предупреждает о жаре и осадках. Где будет мокро? Смотрите подробный прогноз",
+      "content": "Вторник в Украине будет жаркий, но в ряде областей ожидаются осадки.\nВо вторник, 8 июля, жара в Украине будет продолжаться, но в ряде областей погоду изменит циклон. Об этом сообщила синоптик Наталья Диденко.\nПо ее данным, температура воздуха в течен... [1045 chars]",
+      "url": "https://www.unian.net/pogoda/news/v-ukrainu-idet-ciklon-gabriel-sinoptik-natalya-didenko-rasskazala-o-pogode-8-iyulya-2025-goda-13060038.html",
+      "image": "https://images.unian.net/photos/2024_07/thumb_files/1000_545_1720292626-7843.jpg?1",
+      "publishedAt": "2025-07-07T10:45:30Z",
+      "source": {
+        "name": "УНИАН",
+        "url": "https://www.unian.net"
+      }
+    },
+    {
+      "title": "Бюджетний процесор для ігор 2025",
+      "description": "Відкриваємо список Intel Core i5-13400, названий найкращим процесором з бюджетом до 7000 грн. У нього висока продуктивність в іграх і робочих завданнях.",
+      "content": "Вибрати є з чого, навіть якщо бюджет менше 100 доларів.\nРинок бюджетних процесорів важливий як ніколи, оскільки ціни продовжують зростати, і, на щастя, існує потужна лінійка недорогих чипсетів як від Intel, так і від AMD, які можуть задовольнити ваші... [2315 chars]",
+      "url": "https://www.unian.ua/techno/hardware/byudzhetniy-procesor-dlya-igor-2025-5-modeley-vid-avtoritetnih-ekspertiv-13060050.html",
+      "image": "https://images.unian.net/photos/2025_07/thumb_files/1000_545_1751882977-8651.jpg?1",
+      "publishedAt": "2025-07-07T10:45:00Z",
+      "source": {
+        "name": "УНІАН",
+        "url": "https://www.unian.ua"
+      }
+    },
+    {
+      "title": "Tesla shares fall nearly 7% in premarket after Elon Musk's ‘American Party’ intent spooks Wall Street investors",
+      "description": "Tesla shares dropped nearly 7% on premarket Nasdaq session after billionaire founder Elon Musk announced his intent to create a political party over the weekend. Shares have lost 16.86% year-to-date (YTD) in 2025.",
+      "content": "Billionaire Elon Musk's electric vehicle (EV) manufacturing company, Tesla Inc., shares dropped nearly 7% on the pre-market session after Musk's intent to open a political party named the “American Party” spooked US market investors.\nTesla shares dro... [2073 chars]",
+      "url": "https://www.livemint.com/market/stock-market-news/tesla-shares-fall-nearly-7-in-premarket-after-elon-musks-american-party-intent-spooks-wall-street-investors-11751882044765.html",
+      "image": "https://www.livemint.com/lm-img/img/2025/07/07/1600x900/QATAR-ECONOMY-FORUM-MUSK-0_1747825347408_1751884216969.JPG",
+      "publishedAt": "2025-07-07T10:38:42Z",
+      "source": {
+        "name": "Mint",
+        "url": "https://www.livemint.com"
+      }
+    },
+    {
+      "title": "Warum Käse manche Menschen um den Schlaf bringen könnte",
+      "description": "Manche Menschen schlafen nach dem Verzehr von Käse schlecht. Jetzt haben Forscher herausgefunden: Ursache könnte Laktoseintoleranz sein. Auch andere Unverträglichkeiten scheinen den Schlaf zu beeinflussen. Von V. Bräse und S. von Liebe.",
+      "content": "Studie aus Kanada Albträume durch Käse? Stand: 07.07.2025 12:37 Uhr\nManche Menschen schlafen nach dem Verzehr von Käse schlecht. Jetzt haben Forscher herausgefunden: Ursache könnte Laktoseintoleranz sein. Auch andere Unverträglichkeiten scheinen den ... [3680 chars]",
+      "url": "https://www.tagesschau.de/wissen/gesundheit/auswirkungen-kase-schlaf-100.html",
+      "image": "https://images.tagesschau.de/image/7ad978ea-9cf1-4f19-9270-584fa213561a/AAABl9SODJs/AAABkZLlo-k/16x9-big/kaese-106.jpg?width=1280",
+      "publishedAt": "2025-07-07T10:37:00Z",
+      "source": {
+        "name": "tagesschau.de",
+        "url": "https://www.tagesschau.de"
+      }
+    },
+    {
+      "title": "בצלאל סמוטריץ' חושף: \"לא ידענו על התכנית האיראנית לכיבוש ישראל\"",
+      "description": "שר האוצר בצלאל סמוטריץ', חשף במהלך כנס רשות החינוך נעם-צביה, פרטים חדשים על הכישלון הישראלי בהערכת האיום החות'י על ישראל כחלק מתכנית איראן להשמדת המדינה - ותחושותיו בעקבות השבעה באוקטובר: \"אני עוזב\"",
+      "content": "שר האוצר בצלאל סמוטריץ' חשף בדבריו בכנס רשת החינוך נעם-צביה את מה שהגדיר כ\"עיוורון מוחלט\" בהערכת האיום החות'י על ישראל, כחלק מתיאור רחב יותר של תוכנית ההשמדה האיראנית שלא זוהתה במלואה עד מלחמת \"חרבות ברזל\".\nבפני מאות מורים שהשתתפו בכנס, הסביר סמוטריץ... [2074 chars]",
+      "url": "https://www.maariv.co.il/news/military/article-1212397",
+      "image": "https://images.maariv.co.il/image/upload/f_auto,fl_lossy/c_fill,g_faces:center,w_1200/467025",
+      "publishedAt": "2025-07-07T10:29:59Z",
+      "source": {
+        "name": "מעריב",
+        "url": "https://www.maariv.co.il"
+      }
+    },
+    {
+      "title": "Тимура Иванова посадили на 13 лет за коррупцию в армии",
+      "description": "Российские власти пытаются ограничить коррупцию в армии, не устраняя ее полностью. Система нуждается в контролируемом воровстве, чтобы не рушиться изн...",
+      "content": "Российские власти пытаются ограничить коррупцию в армии, не устраняя ее полностью. Система нуждается в контролируемом воровстве, чтобы не рушиться изнутри.\nОб этом сообщает РБК-Украина со ссылкой на Министерство обороны Великобритании в X ( Twitter) ... [1651 chars]",
+      "url": "https://www.rbc.ua/ukr/news/britanska-rozvidka-poyasnila-navishcho-putin-1751882473.html",
+      "image": "https://www.rbc.ua/static/img/_/i/_ivanov_foto__roszmi_9ae3c372a9e349df105801a48dd61260_1300x820.jpg",
+      "publishedAt": "2025-07-07T10:01:13Z",
+      "source": {
+        "name": "РБК-Україна",
+        "url": "https://www.rbc.ua"
+      }
+    },
+    {
+      "title": "Оружие по клику: фронтовые подразделения ВСУ тестируют онлайн-платформу для поставок матчасти",
+      "description": "ВСУ начали тестирование новой системы закупок DOT-Chain Defense. Это цифровая платформа, которая призвана упростить и ускорить процесс поставок матчасти для фронтовых подразделений. В пилотном проекте участвуют 10 бригад. Имеющие доступ пользователи в специальной онлайн-платформе могут выбирать",
+      "content": "ВСУ начали тестирование новой системы закупок DOT-Chain Defense. Это цифровая платформа, которая призвана упростить и ускорить процесс поставок матчасти для фронтовых подразделений. В пилотном проекте участвуют 10 бригад.Имеющие доступ пользователи в... [3047 chars]",
+      "url": "https://topwar.ru/267616-oruzhie-po-kliku-frontovye-podrazdelenija-vsu-testirujut-onlajn-platformu-dlja-postavok-matchasti.html",
+      "image": "https://topwar.ru/uploads/posts/2025-07/5d48ad1db4_1.webp",
+      "publishedAt": "2025-07-07T09:55:46Z",
+      "source": {
+        "name": "Военное обозрение",
+        "url": "https://topwar.ru"
+      }
+    },
+    {
+      "title": "The New York Times: Китай платит высокую цену за своё доминирование на рынке редкоземельных металлов",
+      "description": "На фоне жёсткой тарифной политики администрации Трампа против Китая, который в ответ начал создавать американцам проблемы с поставками редкоземельных металлов, по добыче которых КНР на первом месте в мире, некоторые американские СМИ начали публиковать «страшилки» об огромной цене, которую платит",
+      "content": "В южной и центральной части Китая шахты по добыче редкоземельных металлов отравили десятки некогда зелёных долин и превратили склоны холмов в бесплодную красную глину\nЧрезмерная добыча редкоземельных металлов привела к оползням, засорению рек, чрезвы... [2788 chars]",
+      "url": "https://topwar.ru/267622-the-new-york-times-kitaj-platit-vysokuju-cenu-za-svoe-dominirovanie-na-rynke-redkozemelnyh-metallov.html",
+      "image": "https://topwar.ru/uploads/posts/2025-07/7b23ce5b72_21fd03f5c063400f9eed676c21812473.webp",
+      "publishedAt": "2025-07-07T09:53:25Z",
+      "source": {
+        "name": "Военное обозрение",
+        "url": "https://topwar.ru"
+      }
+    },
+    {
+      "title": "השגריר האיראני לשעבר בוכה: איך הרוסים מוכרים אותנו כל פעם מחדש",
+      "description": "דיפלומט איראני בכיר חושף סדקים ביחסי איראן-רוסיה, בטענה שמוסקבה סירבה לספק לאיראן מערכות לחימה למרות המלחמה עם ישראל, בעוד הציעה נשק מתקדם להודו, וחושף את האכזבה האיראנית מהתנהלות החברה הטובה",
+      "content": "סייד חוסיין מוסביאן, שגריר איראן בגרמניה לשעבר וראש משלחת המשא ומתן לגרעין האיראני לשעבר חשף את הקשיים בין חברתה הטובה ביותר של איראן, רוסיה, במהלך המלחמה של ישראל עם המדינה.\n\"רוסיה לא סיפקה לאיראן מטוסי קרב מדגם Su-35 או את מערכת ההגנה S-400\" טען, \"... [1513 chars]",
+      "url": "https://www.maariv.co.il/news/world/article-1212380",
+      "image": "https://images.maariv.co.il/image/upload/f_auto,fl_lossy/c_fill,g_faces:center,w_1200/991256",
+      "publishedAt": "2025-07-07T09:50:20Z",
+      "source": {
+        "name": "מעריב",
+        "url": "https://www.maariv.co.il"
+      }
+    },
+    {
+      "title": "תגלית עוצרת נשימה בפרו: עיר עתיקה בת 3,500 שנה נחשפה",
+      "description": "עיר נשכחת נחשפה בפרו. ארכיאולוגים בפרו חשפו לאחרונה עיר עתיקה ומרתקת בת 3,500 שנה, בשם פניקו, במחוז ברנקה הצפוני.",
+      "content": "צילום: rjankovsky / Shutterstock\nעיר נשכחת נחשפה בפרו: צומת דרכים מסחרי שקישר בין תרבויות וחושף את גורל ציוויליזציית קאראל (Caral) האבודה – פניקו (Peñico), השוכנת כ-200 ק\"מ צפונית ללימה ובגובה 600 מטרים מעל פני הים, הוקמה ככל הנראה בין 1,800 ל-1,500 ... [1196 chars]",
+      "url": "https://www.srugim.co.il/1147954-%D7%AA%D7%92%D7%9C%D7%99%D7%AA-%D7%A2%D7%95%D7%A6%D7%A8%D7%AA-%D7%A0%D7%A9%D7%99%D7%9E%D7%94-%D7%91%D7%A4%D7%A8%D7%95-%D7%A2%D7%99%D7%A8-%D7%A2%D7%AA%D7%99%D7%A7%D7%94-%D7%91%D7%AA-3500-%D7%A9%D7%A0",
+      "image": "https://www.srugim.co.il/i/wp-content/uploads/2025/07/shutterstock_2500335965__w600h400q80.jpg",
+      "publishedAt": "2025-07-07T09:47:06Z",
+      "source": {
+        "name": "סרוגים",
+        "url": "https://www.srugim.co.il"
+      }
+    },
+    {
+      "title": "Turister rasar mot ”handduksmaffia” på Mallorca",
+      "description": "På hotell runtom i Palma pågår ett krig – om solstolar.\nTidigt på morgnarna smyger sig ”handduksmaffian” ut för att lägga beslag på solsängarna, skriver Dagbladet.\nDet får skandinaviska turister att se rött.\n– Jag blir förbannad, säger Allan Hjort till tidningen.",
+      "content": "Tidigt på morgnarna smyger sig ”handduksmaffian” ut för att lägga beslag på solsängarna, skriver Dagbladet.\nPå hotell runtom i Palma pågår ett krig – om solstolar.\nAnnons\nSå här kan det se ut när handduksmaffian varit i farten. Foto: Kristian Ridder-... [1987 chars]",
+      "url": "https://www.expressen.se/nyheter/varlden/turister-rasar-mot-handduksmaffia-pa-mallorca/",
+      "image": "https://static.bonniernews.se/images/dd/73/dd73a76ef44d4396ad4bff2fb49006af/16x9/original.png",
+      "publishedAt": "2025-07-07T09:43:46Z",
+      "source": {
+        "name": "Expressen",
+        "url": "https://www.expressen.se"
+      }
+    },
+    {
+      "title": "\"איתרו את גופתו בתוך נחש גדול. המשפחה קיבלה את הגורל\"",
+      "description": "לה נוטי, בן 61, נעלם כשיצא להאכיל את תרנגולותיו בדרום-מזרח סולאווסי, אינדונזיה, ולמחרת נמצאה גופתו בתוך בטן של פיתון ענק.",
+      "content": "טרגדיה באינדונזיה: חקלאי מקומי שנעדר במשך יממה – אותר מת בתוך קיבתו של נחש. לה נוטי, בן 61, יצא בבוקר יום שישי להאכיל את בעלי החיים בחוותו שבכפר מג'אפאהוט, דרום-מזרח סולאווסי – ומאז אבדו עקבותיו. כשהמשפחה הבחינה כי לא חזר לביתו, הם החלו בחיפושים. גופ... [1751 chars]",
+      "url": "https://www.mako.co.il/hix-bizarre/Article-c57c067d244e791026.htm",
+      "image": "https://img.mako.co.il/2025/07/07/I_grid_635350-5699.jpg",
+      "publishedAt": "2025-07-07T09:43:00Z",
+      "source": {
+        "name": "mako",
+        "url": "https://www.mako.co.il"
+      }
+    },
+    {
+      "title": "Nintendo Switch 2 restocks - live updates and retailers to check today",
+      "description": "We're bringing you the latest news on Switch 2 restocks live",
+      "content": "It’s been more than a month since Nintendo Switch 2 hit store shelves, but the hybrid console remains frustratingly tricky to track down. Switch 2 restocks have been limited, and when a retailer does have increased availability, the console typically... [7888 chars]",
+      "url": "https://www.tomsguide.com/live/news/nintendo-switch-2-restocks-live-news-and-updates",
+      "image": "https://cdn.mos.cms.futurecdn.net/mDU8HmajpRZmtde9KcGjmH.jpg",
+      "publishedAt": "2025-07-07T11:51:57Z",
+      "source": {
+        "name": "Tom's Guide",
+        "url": "https://www.tomsguide.com"
+      }
+    },
+    {
+      "title": "Атака на Ільський НПЗ, Краснодарський край",
+      "description": "Дрони ГУР атакували Ільський НПЗ 7 липня 2025 - завод знаходиться в Краснодарському краї. Що відомо про атаку ГУР на російський нафтопереробний завод - 24 Канал",
+      "content": "Про ураження НПЗ уже бідкаються місцеві ЗМІ. Про це повідомляє 24 Канал із посиланням на джерела у ГУР.\nДивіться також У ЦПД підтвердили атаку на хімічний завод у Московській області: що там виробляють\nУкраїна знову атакувала НПЗ Росії\nУ російських З... [753 chars]",
+      "url": "https://24tv.ua/vluchilo-odin-iz-tsehiv-droni-gur-atakuvali-npz-krasnodarskomu_n2864628",
+      "image": "https://24tv.ua/resources/photos/news/202507/2864628.jpg?v=1751887966000&w=1200&h=675",
+      "publishedAt": "2025-07-07T11:25:41Z",
+      "source": {
+        "name": "24 Канал",
+        "url": "https://24tv.ua"
+      }
+    },
+    {
+      "title": "IPCA e Ata do FOMC: veja os pontos de atenção para Ibovespa, Dólar, Bitcoin e índices",
+      "description": "O que esperar do Ibovespa, Dólar, Nasdaq, S&P500 e Bitcoin para esta semana. Confira os pontos importantes a serem rompidos.",
+      "content": "Publicidade\nA semana começa sob forte atenção aos indicadores de inflação e atividade econômica, que devem orientar o sentimento dos mercados nos próximos dias. No Brasil, os destaques ficam por conta do IPCA de junho, considerado o principal termôme... [8887 chars]",
+      "url": "https://www.infomoney.com.br/mercados/ipca-ata-do-fomc-veja-os-pontos-de-atencao-para-ibovespa-dolar-bitcoin-indices/",
+      "image": "https://www.infomoney.com.br/wp-content/uploads/2025/04/2151937278.jpg?quality=70",
+      "publishedAt": "2025-07-07T11:05:17Z",
+      "source": {
+        "name": "InfoMoney",
+        "url": "https://www.infomoney.com.br"
+      }
+    },
+    {
+      "title": "इस डील का सबको था इंतजार! Samsung फोन पर ₹60 हजार की छूट, Amazon सेल में मौका",
+      "description": "सैमसंग का प्रीमियम Galaxy AI पावर्ड फोन Galaxy S24 Ultra ग्राहकों को 60 हजार रुपये की बंपर छूट पर खरीदने का मौका मिलने जा रहा है। इस डिवाइस पर बैंक ऑफर्स और अन्य डिस्काउंट्स Amazon Prime Day Sale में मिलेंगे। , Gadgets Hindi News - Hindustan",
+      "content": "सैमसंग का प्रीमियम Galaxy AI पावर्ड फोन Galaxy S24 Ultra ग्राहकों को 60 हजार रुपये की बंपर छूट पर खरीदने का मौका मिलने जा रहा है। इस डिवाइस पर बैंक ऑफर्स और अन्य डिस्काउंट्स Amazon Prime Day Sale में मिलेंगे।\nMon, 7 July 2025 04:31 PM\nसाउथ कोरियन टेक... [1275 chars]",
+      "url": "https://www.livehindustan.com/gadgets/samsung-galaxy-s24-ultra-5g-on-lowest-price-ever-to-get-60000-rupees-discount-in-amazon-prime-day-sale-201751884632883.html",
+      "image": "https://www.livehindustan.com/lh-img/smart/img/2025/07/07/1600x900/S24qqer_1751886041385_1751886048328.jpg",
+      "publishedAt": "2025-07-07T11:01:17Z",
+      "source": {
+        "name": "Hindustan",
+        "url": "https://www.livehindustan.com"
+      }
+    },
+    {
+      "title": "Survival Kids review: Cosy castaway capers",
+      "description": "The launch line-up of Switch 2 handheld couldn’t have been more barebones, comprising just a couple of fresh offerings from Nintendo and a handful from other publishers.",
+      "content": "Platform: Switch 2Age: 7+Verdict: ★★★☆☆\nThe launch line-up of Switch 2 handheld couldn’t have been more barebones, comprising just a couple of fresh offerings from Nintendo and a handful from other publishers.\nSurvival Kids fits into the latter categ... [2451 chars]",
+      "url": "https://www.independent.ie/entertainment/games/survival-kids-review-cosy-castaway-capers/a148668740.html",
+      "image": "https://focus.independent.ie/thumbor/85EjQZq6xZB0JgJRMSU5LLvF-Mk=/300x0:3540x2160/629x0/prod-mh-ireland/ddcdc30a-f0a9-41be-a195-e1c9f1b742b0/3a7943ba-9907-42b3-b1d4-94d8e187e3c6/ddcdc30a-f0a9-41be-a195-e1c9f1b742b0.jpg",
+      "publishedAt": "2025-07-07T11:00:00Z",
+      "source": {
+        "name": "The Irish Independent",
+        "url": "https://www.independent.ie"
+      }
+    },
+    {
+      "title": "Apple anker EU-bot på 500 millioner euro",
+      "description": "Apple anker en kjempebot ilagt av EU og beskylder unionen for å påtvinge dem endringer som er «dårlige» for brukerne.",
+      "content": "Annonse\nEU-kommisjonen ila Apple boten på 500 millioner euro i april for å ha hindret utviklere i «lede» kunder til andre steder enn App Store for å få tilgang til bedre tilbud, noe som er i strid med EUs regler for digital konkurranse.\n– I dag har v... [593 chars]",
+      "url": "https://www.abcnyheter.no/nyheter/apple-anker-eu-bot-pa-500-millioner-euro/1124478",
+      "image": "https://image.abcnyheter.no/1112984.jpg?imageId=1112984&panox=0&panoy=0&panow=0&panoh=0&width=1200&height=683",
+      "publishedAt": "2025-07-07T10:59:43Z",
+      "source": {
+        "name": "ABC Nyheter",
+        "url": "https://www.abcnyheter.no"
+      }
+    },
+    {
+      "title": "itel City 100 Launched with 5200mAh Battery 13 Megapixel Camera Price Specs",
+      "description": "itel City 100 भारत में 13 मेगापिक्सल कैमरा के साथ पेश हुआ है।",
+      "content": "itel City 100 Price\nitel City 100 Specifications\nitel ने भारतीय बाजार में itel City 100 को लॉन्च कर दिया है। itel City 100 में 6.75 इंच की HD+ डिस्प्ले दी गई है। इस फोन में 13 मेगापिक्सल का प्राइमरी कैमरा और 5 मेगापिक्सल का फ्रंट कैमरा है। इस फोन में... [1352 chars]",
+      "url": "https://hindi.gadgets360.com/mobiles/itel-city-100-launched-with-5200mah-battery-13-megapixel-camera-price-specs-news-8837062",
+      "image": "https://c.ndtvimg.com/2025-07/v44qnhpg_itel-city-100_625x300_07_July_25.jpg",
+      "publishedAt": "2025-07-07T10:57:18Z",
+      "source": {
+        "name": "Gadgets 360 Hindi",
+        "url": "https://hindi.gadgets360.com"
+      }
+    },
+    {
+      "title": "Amazon, allarme truffe per il Prime Day: ecco come migliaia di siti cercano di rubare dati e soldi mentre facciamo shopping",
+      "description": "A lanciare l’allarme è Check Point, multinazionale di cybersecurity. Il meccanismo è noto ma sempre più sofisticato: i criminali informatici creano siti clonati che imitano le pagine di login o pagamento di Amazon sfruttando errori di battitura nei nomi dei domini o utilizzando estensioni ingannevoli",
+      "content": "Ultim'ora news 7 luglio ore 12\nMancano poche ore all’inizio dell’Amazon Prime Day, il grande evento di shopping online che catalizza milioni di utenti nel mondo e che quest’anno si tiene dall’8 all’11 luglio. Ma l’impennata di attività cybercriminali... [2008 chars]",
+      "url": "https://www.milanofinanza.it/news/prime-day-occhio-alle-truffe-migliaia-di-siti-clonano-amazon-per-rubare-dati-e-soldi-ecco-come-difendersi-202507071252518313",
+      "image": "https://static.milanofinanza.it/content_upload/img/2025/07/202507071252518313/Imagoeconomica_2328710-998061.jpg",
+      "publishedAt": "2025-07-07T10:52:00Z",
+      "source": {
+        "name": "Milano Finanza",
+        "url": "https://www.milanofinanza.it"
+      }
+    },
+    {
+      "title": "Telegraph: Πέντε σημαντικές ισραηλινές βάσεις χτυπήθηκαν από ιρανικούς πυραύλους",
+      "description": "Η Telegraph ανέφερε ότι αυτά τα χτυπήματα είναι επιπλέον των 36 άλλων χτυπημάτων που έχουν διαπεράσει τα ισραηλινά συστήματα αεράμυνας - Το Ισραήλ δεν ανακοίνωσε αυτά τα χτυπήματα",
+      "content": "Η βρετανική εφημερίδα The Telegraph ανέφερε ότι τουλάχιστον πέντε ισραηλινές στρατιωτικές εγκαταστάσεις χτυπήθηκαν άμεσα από ιρανικούς πυραύλους κατά τη διάρκεια του 12ήμερου πολέμου.\nΜε βάση δεδομένα ραντάρ και δορυφόρων που εξέτασαν ερευνητές από τ... [1904 chars]",
+      "url": "https://www.zougla.gr/kosmos/telegraph-pente-simantikes-israilines-vaseis-chtypithikan-apo-iranikous-pyravlous/",
+      "image": "https://www.zougla.gr/Uploads/2025/07/07/israel-bombs-.jpg",
+      "publishedAt": "2025-07-07T10:41:04Z",
+      "source": {
+        "name": "Zougla",
+        "url": "https://www.zougla.gr"
+      }
+    },
+    {
+      "title": "UGREEN Nexode Retractable USB-C Cable 100W è il miglior cavo retraibile presente sul mercato - Recensione",
+      "description": "UGREEN Nexode cavo retraibile USB-C Cable da 100W permette di ricaricare qualsiasi device in piena sicurezza e velocità.",
+      "content": "Sono passati ormai diversi anni dall’introduzione dello standard USB-C, eppure il mercato dei cavi continua a evolversi con soluzioni sempre più innovative. Oggi mi trovo a recensire un prodotto che ha catturato la mia attenzione per la sua peculiari... [14680 chars]",
+      "url": "https://www.tecnoandroid.it/2025/07/07/ugreen-nexode-retractable-usb-c-cable-100w-e-il-miglior-cavo-retraibile-presente-sul-mercato-recensione-1590215/",
+      "image": "https://www.tecnoandroid.it/wp-content/uploads/2025/07/UGREEN-Nexode-Retractable-USB-C-Cable.jpg",
+      "publishedAt": "2025-07-07T10:40:46Z",
+      "source": {
+        "name": "TecnoAndroid",
+        "url": "https://www.tecnoandroid.it"
+      }
     }
   ]
 }
