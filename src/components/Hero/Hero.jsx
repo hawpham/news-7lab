@@ -18,7 +18,7 @@ export default function Hero() {
     async function fetchNewsTopHeadlines() {
       try {
         const res = await gnewsApi.get("/top-headlines", {
-          params: { topic: "world" },
+          params: { topic: "world", max: 7, lang: "en" },
         });
         // const res = await newsApi.get("/everything", {
         //   params: {

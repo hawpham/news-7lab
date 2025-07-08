@@ -7,6 +7,7 @@ import SkeletonArticle from "../Skeleton/SkeletonArticle/SkeletonArticle";
 import gnewsApi from "../../api/gnewsApi.js";
 
 export default function CategorySection({ title, viewAllLink, categoryArticles }) {
+  console.log("🚀 ~ CategorySection ~ categoryArticles:", categoryArticles);
   const [listArticles, setListArticles] = useState([]);
   const [loading, setLoading] = useState(true);
   // const { category } = useParams();
@@ -16,8 +17,9 @@ export default function CategorySection({ title, viewAllLink, categoryArticles }
       setLoading(true);
       try {
         const res = await gnewsApi.get("/top-headlines", {
-          params: { topic: categoryArticles },
+          params: { topic: categoryArticles, max: 8, lang: "en" },
         });
+
         // const res = await newsApi.get("/everything", {
         //   params: {
         //     q: categoryArticles ?? "",

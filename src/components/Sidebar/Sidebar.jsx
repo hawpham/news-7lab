@@ -42,7 +42,7 @@ export default function Sidebar() {
       setLoading(true);
       try {
         const res = await gnewsApi.get("/top-headlines", {
-          params: { topic: "breaking-news" },
+          params: { topic: "general", max: 6, lang: "en" },
         });
         setListArticles(res.data.articles);
         // const res = await newsApi.get("/top-headlines", {
@@ -68,7 +68,7 @@ export default function Sidebar() {
         {!loading && listArticles?.length ? (
           listArticles?.map((post, index) => (
             <li key={index} className={styles.postItem}>
-              <Link to={`/post/${post.id}`}>
+              <Link to={`/post/breaking-news/${index}`}>
                 <img src={post?.image || "https://placeholder.pics/svg/300/DEDEDE/555555/image"} alt={post?.title} />
                 <div className={styles.info}>
                   <h4>{post?.title}</h4>

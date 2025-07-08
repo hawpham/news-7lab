@@ -11,11 +11,11 @@ export default function Home() {
         <Hero />
         {/* <FeaturePost /> */}
 
-        <CategorySection title="Computer Tricks" viewAllLink="/computer-tricks" categoryArticles="bitcoin" />
-        <CategorySection title="News" viewAllLink="/news" categoryArticles="apple" />
-        <CategorySection title="Mobile" viewAllLink="/mobile" categoryArticles="mobile" />
-        <CategorySection title="Windows" viewAllLink="/windows" categoryArticles="windows" />
-        <CategorySection title="Software" viewAllLink="/software" categoryArticles="technology" />
+        <CategorySection title="Nation" viewAllLink="/nation" categoryArticles="nation" />
+        <CategorySection title="World" viewAllLink="/world" categoryArticles="world" />
+        <CategorySection title="Sports" viewAllLink="/sports" categoryArticles="sports" />
+        <CategorySection title="Business" viewAllLink="/busness" categoryArticles="business" />
+        <CategorySection title="Health" viewAllLink="/health" categoryArticles="health" />
       </div>
 
       <aside className={styles.sidebar}>
