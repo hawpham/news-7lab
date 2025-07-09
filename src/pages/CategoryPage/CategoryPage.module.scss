@@ -37,19 +37,12 @@
     padding: 5px;
     margin-bottom: 15px;
   }
-  .description {
-    font-size: 13px;
-    font-weight: normal;
-    @media (max-width: 768px) {
-      padding: 0 15px;
-    }
-  }
 }
 
 .categoryImage {
   width: 100%;
   min-width: 130px;
-  height: 180px;
+  height: 250px;
   // max-width: 100%;
   object-fit: cover;
   padding: 5px;
@@ -60,7 +53,7 @@
 
     padding: 5px;
     margin: 0;
-    height: 90px;
+    height: 120px;
   }
 }
 .categoryContent {
@@ -70,6 +63,21 @@
     // max-width: 200px;
     display: flex;
     flex-direction: column;
+  }
+  .title {
+    font-size: 1.1rem;
+    @media (max-width: 768px) {
+      font-size: 0.8rem;
+    }
+  }
+  .description {
+    font-size: 0.91rem;
+    color: #404040;
+    font-weight: normal;
+    @media (max-width: 768px) {
+      padding: 0 15px;
+      display: none;
+    }
   }
 }
 
