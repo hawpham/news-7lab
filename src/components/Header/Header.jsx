@@ -32,7 +32,11 @@ export default function Header() {
       <div className={styles.topBar}>
         <div className={styles.date}>{today}</div>
         <div className={styles.links}>
-          <Link to="/hot-news">Hot News</Link>
+          {/* <Link to="7slab.com">Go to 7SLab</Link> */}
+          <a href="http://7slab.com" target="_blank" rel="noopener noreferrer">
+            Go to 7SLab
+          </a>
+          {/* <Link to="/hot-news">Hot News</Link> */}
           <Link to="/contact">Contact</Link>
           <Link to="/privacy">Privacy</Link>
         </div>
