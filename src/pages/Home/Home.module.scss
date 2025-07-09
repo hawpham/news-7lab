@@ -1,8 +1,11 @@
 .container {
   display: flex;
   gap: 24px;
-  padding: 24px;
+  padding: 65px 24px;
   background: #fff;
+  @media (max-width: 768px) {
+    padding: 40px 15px;
+  }
 }
 
 .left {
