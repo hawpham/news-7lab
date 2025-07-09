@@ -17,7 +17,7 @@ export default function CategorySection({ title, viewAllLink, categoryArticles }
       setLoading(true);
       try {
         const res = await gnewsApi.get("/top-headlines", {
-          params: { topic: categoryArticles, max: 8, lang: "en" },
+          params: { topic: categoryArticles, max: 6, lang: "en" },
         });
 
         // const res = await newsApi.get("/everything", {
@@ -37,7 +37,7 @@ export default function CategorySection({ title, viewAllLink, categoryArticles }
     }
 
     fetchNewsListArticles();
-  }, []);
+  }, [categoryArticles]);
   return (
     <section className={styles.category}>
       <div className={styles.header}>

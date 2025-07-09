@@ -11,11 +11,13 @@ export default function Home() {
         <Hero />
         {/* <FeaturePost /> */}
 
-        <CategorySection title="Nation" viewAllLink="/nation" categoryArticles="nation" />
-        <CategorySection title="World" viewAllLink="/world" categoryArticles="world" />
-        <CategorySection title="Sports" viewAllLink="/sports" categoryArticles="sports" />
-        <CategorySection title="Business" viewAllLink="/busness" categoryArticles="business" />
-        <CategorySection title="Health" viewAllLink="/health" categoryArticles="health" />
+        <CategorySection title="World" viewAllLink="category/world" categoryArticles="world" />
+        <CategorySection title="Business" viewAllLink="category/busness" categoryArticles="business" />
+        <CategorySection title="Nation" viewAllLink="category/technology" categoryArticles="technology" />
+        <CategorySection title="Science" viewAllLink="category/science" categoryArticles="science" />
+        <CategorySection title="entertainment" viewAllLink="category/entertainment" categoryArticles="entertainment" />
+        <CategorySection title="Sports" viewAllLink="category/sports" categoryArticles="sports" />
+        <CategorySection title="Health" viewAllLink="category/health" categoryArticles="health" />
       </div>
 
       <aside className={styles.sidebar}>

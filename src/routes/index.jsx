@@ -6,6 +6,7 @@ import App from "../App.jsx";
 import PrivacyPolicy from "../pages/PrivacyPolicy/PrivacyPolicy.jsx";
 import HotNews from "../pages/HotNews/HotNews.jsx";
 import NotFound from "../pages/NotFound/NotFound.jsx";
+import CategoryPage from "../pages/CategoryPage/CategoryPage.jsx";
 // import DetailPage from "../pages/DetailPage/DetailPage.jsx";
 
 export const router = createBrowserRouter([
@@ -16,6 +17,7 @@ export const router = createBrowserRouter([
       { index: true, element: <Home /> },
       // { path: "post/:category/:index", element: <DetailPage /> },
       { path: "post/:category/:index", element: <PostDetail /> },
+      { path: "category/:category", element: <CategoryPage /> },
       { path: "contact", element: <Contact /> },
       { path: "privacy", element: <PrivacyPolicy /> },
       { path: "hot-news", element: <HotNews /> },
