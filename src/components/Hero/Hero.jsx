@@ -8,7 +8,6 @@ import gnewsApi from "../../api/gnewsApi";
 
 export default function Hero() {
   const [topHeadlinesArticles, setTopHeadlinesArticles] = useState([]);
-  console.log("🚀 ~ Hero ~ topHeadlinesArticles:", topHeadlinesArticles);
   // const [category, index] = useParams()
   const [loading, setLoading] = useState(true);
 
