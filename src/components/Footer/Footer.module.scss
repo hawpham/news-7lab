@@ -13,8 +13,12 @@
     }
   }
   .footerMenu {
-    flex: 1 300px;
+    // flex: 1 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    justify-content: space-between;
     @media (max-width: 768px) {
       text-align: left;
     }

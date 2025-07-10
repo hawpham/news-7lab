@@ -12,12 +12,16 @@ export default function Footer() {
         </div>
 
         <div className={styles.footerMenu}>
-          <h4>Menu</h4>
+          {/* <h4>Menu</h4> */}
+
           {/* <p>The articles are compiled by the technical team, so copying without citing the source is strictly prohibited. Please respect the author of the article.</p> */}
           <div className={styles.menuList}>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact">Contact Us</Link>
             <Link to="/privacy">Privacy</Link>
           </div>
+          <a href="http://7slab.com" target="_blank" rel="noopener noreferrer">
+            Go to 7SLab
+          </a>
         </div>
 
         <div className={`${styles.section} ${styles.social}`}>

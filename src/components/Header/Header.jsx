@@ -11,6 +11,9 @@ export default function Header() {
   const inputRef = useRef(null);
   const wrapperRef = useRef(null);
 
+  const [showHeader, setShowHeader] = useState(true);
+  const lastScrollY = useRef(0);
+
   //   forcus search input
   useEffect(() => {
     if (showSearch) inputRef.current?.focus();
@@ -26,21 +29,52 @@ export default function Header() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
+  // Hide search when clicking outside
+  useEffect(() => {
+    function handleClickOutside(e) {
+      if (wrapperRef.current && !wrapperRef.current.contains(e.target)) {
+        setShowSearch(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  // Handle scroll direction
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY.current && currentScrollY > 100) {
+        // scrolling down
+        setShowHeader(false);
+      } else {
+        // scrolling up
+        setShowHeader(true);
+      }
+
+      lastScrollY.current = currentScrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className={styles.header}>
+    // <header className={styles.header}>
+    <header className={`${styles.header} ${!showHeader ? styles.hidden : ""}`}>
       {/* Top nav */}
-      <div className={styles.topBar}>
+      {/* <div className={styles.topBar}>
         <div className={styles.date}>{today}</div>
-        <div className={styles.links}>
-          {/* <Link to="7slab.com">Go to 7SLab</Link> */}
+        <div className={styles.links}> 
           <a href="http://7slab.com" target="_blank" rel="noopener noreferrer">
             Go to 7SLab
           </a>
-          {/* <Link to="/hot-news">Hot News</Link> */}
-          {/* <Link to="/contact">Contact</Link>
-          <Link to="/privacy">Privacy</Link> */}
+          <Link to="/hot-news">Hot News</Link>
+          <Link to="/contact">Contact</Link>
+          <Link to="/privacy">Privacy</Link>
         </div>
-      </div>
+      </div> */}
 
       {/* Main Nav */}
       <div className={styles.logoNav}>
