@@ -41,7 +41,7 @@ export default function CategorySection({ title, viewAllLink, categoryArticles }
   return (
     <section className={styles.category}>
       <div className={styles.header}>
-        <h2>{title}</h2>
+        <h2 className={styles.title}>{title}</h2>
         <Link to={viewAllLink}>View All</Link>
       </div>
       <div className={styles.grid}>

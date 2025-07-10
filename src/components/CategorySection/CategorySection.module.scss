@@ -10,9 +10,19 @@
     padding: 0;
     margin-bottom: 5px;
   }
+  .title {
+    font-weight: 500;
+    font-size: 16px;
+    color: #404040;
+    // padding: 4px 0 5px;
+    &:hover {
+      color: #006ba0;
+    }
+  }
   .description {
     font-size: 13px;
     font-weight: normal;
+    color: #404040;
     @media (max-width: 768px) {
       padding: 0 15px;
     }
@@ -51,19 +61,16 @@
   align-items: center;
   margin-bottom: 12px;
 
-  h2 {
-    font-weight: 600;
+  .title {
+    font-weight: 500;
     font-size: 18px;
+    padding: 4px 0 5px;
+    text-transform: capitalize;
   }
-}
-.title {
-  font-weight: 500;
-  font-size: 14px;
-  padding: 4px 0 5px;
-  text-transform: capitalize;
-
-  &:hover {
-    color: #006ba0;
+  a {
+    &:hover {
+      color: #006ba0;
+    }
   }
 }
 

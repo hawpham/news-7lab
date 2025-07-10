@@ -55,10 +55,10 @@ export default function Header() {
         </button>
 
         <nav className={`${styles.nav} ${menuOpen ? styles.open : ""}`}>
-          <NavLink to="/">News</NavLink>
-          <NavLink to="/category/world">World</NavLink>
-          <NavLink to="/category/business">Business</NavLink>
-          <NavLink to="/category/technology">Tech</NavLink>
+          <NavLink to="/">news</NavLink>
+          <NavLink to="/category/world">world</NavLink>
+          <NavLink to="/category/business">business</NavLink>
+          <NavLink to="/category/technology">tech</NavLink>
           <NavLink to="/category/science">Science</NavLink>
           <NavLink to="/category/sports">sports</NavLink>
           <NavLink to="/category/entertainment">entertainment</NavLink>

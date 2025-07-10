@@ -8,7 +8,6 @@ import styles from "./PostDetail.module.scss";
 export default function PostDetail() {
   const { category, index } = useParams();
   const [article, setArticle] = useState(null);
-  console.log("🚀 ~ PostDetail ~ article:", article);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -16,7 +15,7 @@ export default function PostDetail() {
       try {
         setLoading(true);
         const res = await gnewsApi.get("/top-headlines", {
-          params: { topic: category },
+          params: { topic: category, lang: "en" },
         });
         setArticle(res?.data?.articles[index]);
         // const res = await newsApi.get("/everything", {

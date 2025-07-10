@@ -10,16 +10,14 @@ export default function Home() {
       <div className={styles.left}>
         <Hero />
         {/* <FeaturePost /> */}
-
-        <CategorySection title="World" viewAllLink="category/world" categoryArticles="world" />
-        <CategorySection title="Business" viewAllLink="category/busness" categoryArticles="business" />
-        <CategorySection title="Nation" viewAllLink="category/technology" categoryArticles="technology" />
-        <CategorySection title="Science" viewAllLink="category/science" categoryArticles="science" />
+        <CategorySection title="world" viewAllLink="category/world" categoryArticles="world" />
+        <CategorySection title="business" viewAllLink="category/busness" categoryArticles="business" />
+        <CategorySection title="technology" viewAllLink="category/technology" categoryArticles="technology" />
+        <CategorySection title="science" viewAllLink="category/science" categoryArticles="science" />
         <CategorySection title="entertainment" viewAllLink="category/entertainment" categoryArticles="entertainment" />
-        <CategorySection title="Sports" viewAllLink="category/sports" categoryArticles="sports" />
-        <CategorySection title="Health" viewAllLink="category/health" categoryArticles="health" />
+        <CategorySection title="sports" viewAllLink="category/sports" categoryArticles="sports" />
+        <CategorySection title="health" viewAllLink="category/health" categoryArticles="health" />
       </div>
-
       <aside className={styles.sidebar}>
         <Sidebar />
       </aside>
