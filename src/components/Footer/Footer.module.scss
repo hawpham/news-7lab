@@ -9,7 +9,22 @@
     text-decoration: none;
 
     &:hover {
-      color: #006BA0;
+      color: #006ba0;
+    }
+  }
+  .footerMenu {
+    flex: 1 300px;
+    text-align: center;
+    @media (max-width: 768px) {
+      text-align: left;
+    }
+    h4 {
+      color: #fff;
+      margin-bottom: 8px;
+    }
+    .menuList {
+      display: flex;
+      flex-direction: column;
     }
   }
 }
@@ -66,9 +81,9 @@
       transition: all 0.3s ease;
 
       &:hover {
-        background: #006BA0;
+        background: #006ba0;
         color: #fff;
-        border-color: #006BA0;
+        border-color: #006ba0;
       }
     }
   }

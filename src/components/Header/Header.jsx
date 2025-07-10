@@ -37,8 +37,8 @@ export default function Header() {
             Go to 7SLab
           </a>
           {/* <Link to="/hot-news">Hot News</Link> */}
-          <Link to="/contact">Contact</Link>
-          <Link to="/privacy">Privacy</Link>
+          {/* <Link to="/contact">Contact</Link>
+          <Link to="/privacy">Privacy</Link> */}
         </div>
       </div>
 
