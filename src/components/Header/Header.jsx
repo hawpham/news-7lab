@@ -14,7 +14,7 @@ export default function Header() {
   const [showHeader, setShowHeader] = useState(true);
   const lastScrollY = useRef(0);
 
-  //   forcus search input
+  //   forcus search
   useEffect(() => {
     if (showSearch) inputRef.current?.focus();
   }, [showSearch]);

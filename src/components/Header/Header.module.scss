@@ -66,6 +66,9 @@
     &.active {
       color: #006ba0;
     }
+    &:hover {
+      color: #10c60d;
+    }
   }
 
   @media (max-width: 768px) {

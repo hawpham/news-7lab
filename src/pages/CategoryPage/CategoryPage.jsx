@@ -55,7 +55,7 @@ export default function CategoryPage({ title, viewAllLink }) {
                   <img src={item.image} className={styles.categoryImage} />
 
                   <div className={styles.categoryContent}>
-                    <Link to={`/post/${viewAllLink}/${index}`}>
+                    <Link to={`/post/${category}/${index}`}>
                       <h4 className={styles.title}>{item?.title}</h4>
                     </Link>
                     <p className={styles.description}>{item?.description?.slice(0, 70)}...</p>

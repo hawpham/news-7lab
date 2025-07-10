@@ -7,6 +7,7 @@ import styles from "./PostDetail.module.scss";
 
 export default function PostDetail() {
   const { category, index } = useParams();
+  console.log("🚀 ~ PostDetail ~ category:", category);
   const [article, setArticle] = useState(null);
   const [loading, setLoading] = useState(true);
 

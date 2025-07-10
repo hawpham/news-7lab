@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.content}>
         <div className={styles.section}>
-          <h4>ABOUT</h4>
+          <h4>About Us</h4>
           <p>7SNews is the news and media division of 7SLab. 7SNews provides business, financial, national, and international news to professionals via desktop terminals, the world's media organizations, industry events, and directly to consumers.</p>
         </div>
 
@@ -16,8 +16,8 @@ export default function Footer() {
 
           {/* <p>The articles are compiled by the technical team, so copying without citing the source is strictly prohibited. Please respect the author of the article.</p> */}
           <div className={styles.menuList}>
-            <Link to="/contact">Contact Us</Link>
-            <Link to="/privacy">Privacy</Link>
+            <Link to="/">Contact Us</Link>
+            <Link to="/">Privacy</Link>
           </div>
           <a href="http://7slab.com" target="_blank" rel="noopener noreferrer">
             Go to 7SLab
