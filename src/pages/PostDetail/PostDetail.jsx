@@ -52,7 +52,8 @@ export default function PostDetail() {
         <img src={article.image} alt={article.title} style={{ width: "100%", marginBottom: "20px" }} />
         <p>{article.content || article.description}</p>
         <p>
-          <i>{new Date(article.publishedAt).toLocaleString("vi-VN")}</i>
+          {/* <i>{new Date(article.publishedAt).toLocaleString("vi-VN")}</i> */}
+          <i>{dayjs(post?.publishedAt).format("DD/MM/YYYY")}</i>
         </p>
       </div>
     </main>

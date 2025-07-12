@@ -7,7 +7,6 @@ import SkeletonArticle from "../Skeleton/SkeletonArticle/SkeletonArticle";
 import gnewsApi from "../../api/gnewsApi.js";
 
 export default function CategorySection({ title, viewAllLink, categoryArticles }) {
-  console.log("🚀 ~ CategorySection ~ categoryArticles:", categoryArticles);
   const [listArticles, setListArticles] = useState([]);
   const [loading, setLoading] = useState(true);
   // const { category } = useParams();
@@ -61,7 +60,6 @@ export default function CategorySection({ title, viewAllLink, categoryArticles }
             <div className={styles.categorySection} key={index}>
               <div className={styles.categoryContent}>
                 <img src={item.image} className={styles.categoryImage} />
-
                 <Link to={`/post/${categoryArticles}/${index}`}>
                   <h4 className={styles.title}>{item?.title}</h4>
                 </Link>

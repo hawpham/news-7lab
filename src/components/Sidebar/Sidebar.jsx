@@ -71,7 +71,7 @@ export default function Sidebar() {
               <Link to={`/post/breaking-news/${index}`}>
                 <img src={post?.image || "https://placeholder.pics/svg/300/DEDEDE/555555/image"} alt={post?.title} />
                 <div className={styles.info}>
-                  <h4>{post?.title}</h4>
+                  <h4>{post?.title?.slice(0, 70)}...</h4>
                   <span>{dayjs(post?.publishedAt).format("DD/MM/YYYY")}</span>
                 </div>
               </Link>
