@@ -1,11 +1,15 @@
 .postDetail {
   max-width: 800px;
   margin: 0 auto;
-  padding: 24px 16px;
+  padding: 45px 16px;
 
-  h1 {
-    font-size: 26px;
+  .title {
+    font-size: 22px;
     margin-bottom: 12px;
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
   }
 
   .time {
@@ -27,6 +31,30 @@
     font-size: 16px;
     line-height: 1.7;
     color: #333;
+  }
+  .timePublished {
+    font-size: 14px;
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
+  }
+  .linkSource {
+    font-size: 14px;
+    a {
+      color: #006ba0;
+    }
+  }
+  .sectionAds {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    img {
+      height: 220px;
+
+      @media (max-width: 768px) {
+        height: 140px;
+      }
+    }
   }
 }
 .postNotExist {

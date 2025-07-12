@@ -4,6 +4,7 @@ import SkeletonArticle from "../../components/Skeleton/SkeletonArticle/SkeletonA
 // import newsApi from "../../api/newsApi.js";
 import gnewsApi from "../../api/gnewsApi.js";
 import styles from "./PostDetail.module.scss";
+import dayjs from "dayjs";
 
 export default function PostDetail() {
   const { category, index } = useParams();
@@ -47,13 +48,24 @@ export default function PostDetail() {
 
   return (
     <main className={styles.postDetail}>
+      <p>
+        {/* <i>{new Date(article.publishedAt).toLocaleString("vi-VN")}</i> */}
+        <i className={styles.timePublished}>{dayjs(article?.publishedAt).format("DD/MM/YYYY")}</i>
+      </p>
       <div style={{ padding: "20px", maxWidth: "800px", margin: "0 auto" }}>
         <h1 className={styles.title}>{article.title}</h1>
         <img src={article.image} alt={article.title} style={{ width: "100%", marginBottom: "20px" }} />
         <p>{article.content || article.description}</p>
+        <div className={styles.sectionAds}>
+          <img src="https://placeholder.pics/svg/200/DEDEDE/555555/ads" alt="7s news" />
+        </div>
         <p>
-          {/* <i>{new Date(article.publishedAt).toLocaleString("vi-VN")}</i> */}
-          <i>{dayjs(post?.publishedAt).format("DD/MM/YYYY")}</i>
+          <i className={styles.linkSource}>
+            Source:{" "}
+            <a href={article?.url} target="_blank" rel="noopener noreferrer">
+              {article?.source?.name}
+            </a>
+          </i>
         </p>
       </div>
     </main>
