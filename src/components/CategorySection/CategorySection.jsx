@@ -1,6 +1,5 @@
 import styles from "./CategorySection.module.scss";
-import { Link, useParams } from "react-router-dom";
-// import PostCard from "../PostCard/PostCard";
+import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 // import newsApi from "../../api/newsApi.js";
 import SkeletonArticle from "../Skeleton/SkeletonArticle/SkeletonArticle";
@@ -18,14 +17,6 @@ export default function CategorySection({ title, viewAllLink, categoryArticles }
         const res = await gnewsApi.get("/top-headlines", {
           params: { topic: categoryArticles, max: 6, lang: "en" },
         });
-
-        // const res = await newsApi.get("/everything", {
-        //   params: {
-        //     q: categoryArticles ?? "",
-        //     // country: "us",
-        //     pageSize: 4,
-        //   },
-        // });
 
         setListArticles(res?.data?.articles);
       } catch (err) {

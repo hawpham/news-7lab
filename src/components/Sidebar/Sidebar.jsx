@@ -11,6 +11,7 @@ const latestPosts = [
     id: 1,
     title: "How to Unblock Roblox on a School Computer Without VPN (2025 Guide)",
     image: "https://placeholder.pics/svg/300/DEDEDE/555555/image",
+    content: "How to Unblock Roblox on a School Computer Without VPN (2025 Guide) How to Unblock Roblox on a School Computer Without VPN (2025 Guide)",
     time: "25/06/2025",
   },
   {
@@ -22,12 +23,14 @@ const latestPosts = [
   {
     id: 1,
     title: "What Is Two-Factor Authentication? A Complete Guide to 2FA Security",
+    content: "What Is Two-Factor Authentication? A Complete Guide to 2FA Security What Is Two-Factor Authentication? A Complete Guide to 2FA Security",
     image: "https://placeholder.pics/svg/300/DEDEDE/555555/image",
     time: "07/06/2025",
   },
   {
     id: 2,
     title: "What Is Disk Fragmentation? Understanding, Impact, and Solutions",
+    content: "What Is Disk Fragmentation? Understanding, Impact, and Solutions What Is Disk Fragmentation? Understanding, Impact, and Solutions",
     image: "https://placeholder.pics/svg/300/DEDEDE/555555/image",
     time: "04/06/2025",
   },
