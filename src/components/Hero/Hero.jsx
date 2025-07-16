@@ -3,12 +3,12 @@ import styles from "./Hero.module.scss";
 import { Link } from "react-router-dom";
 // import newsApi from "../../api/newsApi.js";
 import SkeletonArticle from "../Skeleton/SkeletonArticle/SkeletonArticle";
-import dayjs from "dayjs";
+// import dayjs from "dayjs";
 import gnewsApi from "../../api/gnewsApi";
 
 export default function Hero() {
   const [topHeadlinesArticles, setTopHeadlinesArticles] = useState([]);
-  // const [category, index] = useParams()
+  // const { category, index } = useParams();
   const [loading, setLoading] = useState(true);
 
   const [firstArticle, ...subArticlesRest] = topHeadlinesArticles;
@@ -19,13 +19,7 @@ export default function Hero() {
         const res = await gnewsApi.get("/top-headlines", {
           params: { topic: "nation", max: 5, lang: "en" },
         });
-        // const res = await newsApi.get("/everything", {
-        //   params: {
-        //     // country: "us",
-        //     q: "headlines",
-        //     pageSize: 5,
-        //   },
-        // });
+
         setTopHeadlinesArticles(res?.data?.articles);
       } catch (err) {
         console.error("error get top Headlines articles: ", err);

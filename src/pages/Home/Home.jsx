@@ -7,6 +7,7 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
+      {/* Left side */}
       <div className={styles.left}>
         <Hero />
         {/* <FeaturePost /> */}
@@ -18,6 +19,7 @@ export default function Home() {
         <CategorySection title="sports" viewAllLink="category/sports" categoryArticles="sports" />
         <CategorySection title="health" viewAllLink="category/health" categoryArticles="health" />
       </div>
+      {/* Right side */}
       <aside className={styles.sidebar}>
         <Sidebar />
       </aside>
